@@ -132,3 +132,7 @@ dash-cli
 dashd
 dash-qt
 make
+
+.idea
+cmake-build-debug
+config.cache

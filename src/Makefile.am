@@ -343,6 +343,11 @@ crypto_libbitcoin_crypto_a_SOURCES += \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
+# neoscrypt
+crypto_libbitcoin_crypto_a_SOURCES += \
+  crypto/neoscrypt.c \
+  crypto/neoscrypt.h
+
 # common: shared between dashd, and dash-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
