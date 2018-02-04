@@ -188,8 +188,8 @@
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Dash Core sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää Dashiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
+        <source>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <translation>Gincoin Core sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää Dashiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -242,12 +242,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Vakava virhe tapahtunut. Dash Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
+        <source>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</source>
+        <translation>Vakava virhe tapahtunut. Gincoin Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -306,12 +306,12 @@
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
-        <source>&amp;About Dash Core</source>
-        <translation>Tietoja &amp;Dash Core:sta</translation>
+        <source>&amp;About Gincoin Core</source>
+        <translation>Tietoja &amp;Gincoin Core:sta</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Näytä tietoja Dash Core:sta</translation>
+        <source>Show information about Gincoin Core</source>
+        <translation>Näytä tietoja Gincoin Core:sta</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -326,8 +326,8 @@
         <translation>&amp;Asetukset...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dash Core</source>
-        <translation>Muuta Dash Core asetuksia</translation>
+        <source>Modify configuration options for Gincoin Core</source>
+        <translation>Muuta Gincoin Core asetuksia</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -482,8 +482,8 @@
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
-        <source>Show the Dash Core help message to get a list with possible Dash Core command-line options</source>
-        <translation>Näytä Dash Core ohjelista komentorivin valinnoista</translation>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</source>
+        <translation>Näytä Gincoin Core ohjelista komentorivin valinnoista</translation>
     </message>
     <message>
         <source>&amp;PrivateSend information</source>
@@ -514,8 +514,8 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>Dash Core client</source>
-        <translation>Dash Core asiakasohjelma</translation>
+        <source>Gincoin Core client</source>
+        <translation>Gincoin Core asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Dash network</source>
@@ -982,8 +982,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -994,8 +994,8 @@
         <translation>(%1-bittinen)</translation>
     </message>
     <message>
-        <source>About Dash Core</source>
-        <translation>Tietoja Dash Core:sta</translation>
+        <source>About Gincoin Core</source>
+        <translation>Tietoja Gincoin Core:sta</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1053,17 +1053,17 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Dash Core.</source>
-        <translation>Dash Core - Tervetuloa.</translation>
+        <source>Welcome to Gincoin Core.</source>
+        <translation>Gincoin Core - Tervetuloa.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne Dash Core tallettaa datansa.
+        <source>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</source>
+        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne Gincoin Core tallettaa datansa.
 Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä (Live os), ohjaa talletettava data eri levyasemalle turvalliseen paikkaan.</translation>
     </message>
     <message>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
+        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Gincoin Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1074,8 +1074,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Määritä oma datahakemisto:</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1326,12 +1326,12 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>&amp;Lompakko</translation>
     </message>
     <message>
-        <source>Automatically start Dash Core after logging in to the system.</source>
-        <translation>Käynnistä Dash Core automaattisesti kun järjestelmään kirjaudutaan.</translation>
+        <source>Automatically start Gincoin Core after logging in to the system.</source>
+        <translation>Käynnistä Gincoin Core automaattisesti kun järjestelmään kirjaudutaan.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash Core on system login</source>
-        <translation>&amp;Käynnistä Dash Core järjestelmään kirjauduttaessa</translation>
+        <source>&amp;Start Gincoin Core on system login</source>
+        <translation>&amp;Käynnistä Gincoin Core järjestelmään kirjauduttaessa</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1378,8 +1378,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Tämä määrä toimii rajana sekoituksen keskeytykselle kun PrivateSend sen saavuttaa.</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa automaattisesti Dash Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa automaattisesti Gincoin Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1402,8 +1402,8 @@ Varoitus: Jos käytät käyttöjärjestelmää suoraan usb, dvd tai cd levyltä 
         <translation>Ikkunaa suljettaessa pienennä ohjelman ikkuna lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash Core.</source>
-        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun Dash Core asiakasohjelma käynnistetään uudelleen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</source>
+        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun Gincoin Core asiakasohjelma käynnistetään uudelleen.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1970,8 +1970,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1990,8 +1990,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Virhe luettaessa masternoden asetustiedostoa: %1</translation>
     </message>
     <message>
-        <source>Dash Core didn't yet exit safely...</source>
-        <translation>Dash Core ei ole vielä sulkeutunut turvallisesti...</translation>
+        <source>Gincoin Core didn't yet exit safely...</source>
+        <translation>Gincoin Core ei ole vielä sulkeutunut turvallisesti...</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2164,8 +2164,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Muistin käyttö</translation>
     </message>
     <message>
-        <source>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Dash Core debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
+        <source>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Gincoin Core debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2384,8 +2384,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Poista kieltolistalta</translation>
     </message>
     <message>
-        <source>Welcome to the Dash Core RPC console.</source>
-        <translation>Tervetuloa Dash Core RPC konsoliin.</translation>
+        <source>Welcome to the Gincoin Core RPC console.</source>
+        <translation>Tervetuloa Gincoin Core RPC konsoliin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -3030,8 +3030,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dash Core is shutting down...</source>
-        <translation>Dash Core sulkeutuu...</translation>
+        <source>Gincoin Core is shutting down...</source>
+        <translation>Gincoin Core sulkeutuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3184,8 +3184,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>[testiverkko]</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3196,8 +3196,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Dash Core kehittäjät</translation>
+        <source>The Gincoin Core developers</source>
+        <translation>Gincoin Core kehittäjät</translation>
     </message>
 </context>
 <context>
@@ -3794,8 +3794,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Ei voida lukita datahakemistoa %s. Dash Core on luultavasti jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</source>
+        <translation>Ei voida lukita datahakemistoa %s. Gincoin Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3834,8 +3834,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tämä on esi-julkaistu testiversio - Käytä omalla vastuulla - Älä käytä louhimiseen tai kauppasovelluksiin.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Ei voida yhdistää %s tässä tietokoneessa. Dash Core on luultavasti jo käynnissä.</translation>
+        <source>Unable to bind to %s on this computer. Gincoin Core is probably already running.</source>
+        <translation>Ei voida yhdistää %s tässä tietokoneessa. Gincoin Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4150,8 +4150,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i Dash Core Kehittäjät</translation>
+        <source>Copyright (C) 2014-%i The Gincoin Core Developers</source>
+        <translation>Copyright (C) 2014-%i Gincoin Core Kehittäjät</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -4170,8 +4170,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Virhe latauksessa %s: Et voi poistaa käytöstä HD:tä jo olemassa olevassa HD lompakossa</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
-        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version Dash Core:sta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</source>
+        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version Gincoin Core:sta</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4230,8 +4230,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tietoja</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Ohjelman alkuperäisyyden tarkistus epäonnistui. Dash Core sulkeutuu.</translation>
+        <source>Initialization sanity check failed. Gincoin Core is shutting down.</source>
+        <translation>Ohjelman alkuperäisyyden tarkistus epäonnistui. Gincoin Core sulkeutuu.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4486,8 +4486,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Käyttäjä toimijan kommentti (%s) sisältää ei suositeltuja merkkejä.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Dash Core uudestaan viimeistelyä varten</translation>
+        <source>Wallet needed to be rewritten: restart Gincoin Core to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Gincoin Core uudestaan viimeistelyä varten</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4618,7 +4618,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Yksittäisen siirtotapahtuman maksimi siirtomaksu (%s), jos tämä asetetaan liian matalaksi, se voi keskeyttää isot siirtotapahtumat (oletus: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Gincoin Core will not work properly.</source>
         <translation>Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! Dash ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>

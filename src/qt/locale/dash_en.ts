@@ -237,8 +237,8 @@
     </message>
     <message>
         <location line="-57"/>
-        <source>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</translation>
+        <source>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <translation>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -310,14 +310,14 @@
     <name>BitcoinGUI</name>
     <message>
         <location filename="../dash.cpp" line="+542"/>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Dash Core can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="+130"/>
         <location line="+988"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <location line="-979"/>
@@ -391,13 +391,13 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About Dash Core</source>
-        <translation>&amp;About Dash Core</translation>
+        <source>&amp;About Gincoin Core</source>
+        <translation>&amp;About Gincoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Dash Core</source>
-        <translation>Show information about Dash Core</translation>
+        <source>Show information about Gincoin Core</source>
+        <translation>Show information about Gincoin Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -416,8 +416,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for Dash Core</source>
-        <translation>Modify configuration options for Dash Core</translation>
+        <source>Modify configuration options for Gincoin Core</source>
+        <translation>Modify configuration options for Gincoin Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -611,8 +611,8 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Show the Dash Core help message to get a list with possible Dash Core command-line options</source>
-        <translation>Show the Dash Core help message to get a list with possible Dash Core command-line options</translation>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</source>
+        <translation>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -651,8 +651,8 @@
     </message>
     <message>
         <location line="+168"/>
-        <source>Dash Core client</source>
-        <translation>Dash Core client</translation>
+        <source>Gincoin Core client</source>
+        <translation>Gincoin Core client</translation>
     </message>
     <message numerus="yes">
         <location line="+200"/>
@@ -1239,8 +1239,8 @@
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+37"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1255,8 +1255,8 @@
     </message>
     <message>
         <location line="+5"/>
-        <source>About Dash Core</source>
-        <translation>About Dash Core</translation>
+        <source>About Gincoin Core</source>
+        <translation>About Gincoin Core</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1328,18 +1328,18 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Dash Core.</source>
-        <translation>Welcome to Dash Core.</translation>
+        <source>Welcome to Gincoin Core.</source>
+        <translation>Welcome to Gincoin Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Dash Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1353,8 +1353,8 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+88"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1675,13 +1675,13 @@
     </message>
     <message>
         <location line="-104"/>
-        <source>Automatically start Dash Core after logging in to the system.</source>
-        <translation>Automatically start Dash Core after logging in to the system.</translation>
+        <source>Automatically start Gincoin Core after logging in to the system.</source>
+        <translation>Automatically start Gincoin Core after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Dash Core on system login</source>
-        <translation>&amp;Start Dash Core on system login</translation>
+        <source>&amp;Start Gincoin Core on system login</source>
+        <translation>&amp;Start Gincoin Core on system login</translation>
     </message>
     <message>
         <location line="+123"/>
@@ -1740,8 +1740,8 @@
     </message>
     <message>
         <location line="+60"/>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1770,8 +1770,8 @@
     </message>
     <message>
         <location line="+45"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash Core.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Dash Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</translation>
     </message>
     <message>
         <location line="+99"/>
@@ -2530,8 +2530,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <location line="+7"/>
         <location line="+15"/>
         <location line="+19"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <location line="-40"/>
@@ -2555,8 +2555,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+48"/>
-        <source>Dash Core didn&apos;t yet exit safely...</source>
-        <translation>Dash Core didn&apos;t yet exit safely...</translation>
+        <source>Gincoin Core didn&apos;t yet exit safely...</source>
+        <translation>Gincoin Core didn&apos;t yet exit safely...</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="+233"/>
@@ -2821,8 +2821,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+48"/>
-        <source>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -3099,8 +3099,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+188"/>
-        <source>Welcome to the Dash Core RPC console.</source>
-        <translation>Welcome to the Dash Core RPC console.</translation>
+        <source>Welcome to the Gincoin Core RPC console.</source>
+        <translation>Welcome to the Gincoin Core RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3923,8 +3923,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+71"/>
-        <source>Dash Core is shutting down...</source>
-        <translation>Dash Core is shutting down...</translation>
+        <source>Gincoin Core is shutting down...</source>
+        <translation>Gincoin Core is shutting down...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4123,8 +4123,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="+45"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4138,8 +4138,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Dash Core developers</source>
-        <translation>The Dash Core developers</translation>
+        <source>The Gincoin Core developers</source>
+        <translation>The Gincoin Core developers</translation>
     </message>
 </context>
 <context>
@@ -4909,8 +4909,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -4959,8 +4959,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Dash Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Gincoin Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Gincoin Core is probably already running.</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -5354,8 +5354,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+        <source>Copyright (C) 2014-%i The Gincoin Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Gincoin Core Developers</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -5379,8 +5379,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Dash Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -5454,8 +5454,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Initialization sanity check failed. Dash Core is shutting down.</translation>
+        <source>Initialization sanity check failed. Gincoin Core is shutting down.</source>
+        <translation>Initialization sanity check failed. Gincoin Core is shutting down.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5774,8 +5774,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart Dash Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart Gincoin Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart Gincoin Core to complete</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -5939,8 +5939,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
-        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong Dash Core will not work properly.</translation>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong Gincoin Core will not work properly.</source>
+        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong Gincoin Core will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>

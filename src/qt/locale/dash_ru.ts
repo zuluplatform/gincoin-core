@@ -188,8 +188,8 @@
         <translation>Кошелёк зашифрован</translation>
     </message>
     <message>
-        <source>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Сейчас Dash Core закроется для завершения процесса шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши даши от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
+        <source>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <translation>Сейчас Gincoin Core закроется для завершения процесса шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши даши от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -242,12 +242,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Произошла критическая ошибка. Дальнейшая безопасная работа Dash Core невозможна, программа будет закрыта.</translation>
+        <source>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</source>
+        <translation>Произошла критическая ошибка. Дальнейшая безопасная работа Gincoin Core невозможна, программа будет закрыта.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -306,12 +306,12 @@
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <source>&amp;About Dash Core</source>
-        <translation>О &amp;Dash Core</translation>
+        <source>&amp;About Gincoin Core</source>
+        <translation>О &amp;Gincoin Core</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Показать информацию о Dash Core</translation>
+        <source>Show information about Gincoin Core</source>
+        <translation>Показать информацию о Gincoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -326,8 +326,8 @@
         <translation>&amp;Параметры...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dash Core</source>
-        <translation>Изменить параметры конфигурации Dash Core</translation>
+        <source>Modify configuration options for Gincoin Core</source>
+        <translation>Изменить параметры конфигурации Gincoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -482,8 +482,8 @@
         <translation>&amp;Параметры командной строки</translation>
     </message>
     <message>
-        <source>Show the Dash Core help message to get a list with possible Dash Core command-line options</source>
-        <translation>Показать справку по Dash Core со списком возможных параметров командной строки</translation>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</source>
+        <translation>Показать справку по Gincoin Core со списком возможных параметров командной строки</translation>
     </message>
     <message>
         <source>&amp;PrivateSend information</source>
@@ -514,8 +514,8 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Dash Core client</source>
-        <translation>Клиент Dash Core</translation>
+        <source>Gincoin Core client</source>
+        <translation>Клиент Gincoin Core</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Dash network</source>
@@ -982,8 +982,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -994,8 +994,8 @@
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Dash Core</source>
-        <translation>О Dash Core</translation>
+        <source>About Gincoin Core</source>
+        <translation>О Gincoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1053,16 +1053,16 @@
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Dash Core.</source>
-        <translation>Добро пожаловать в Dash Core.</translation>
+        <source>Welcome to Gincoin Core.</source>
+        <translation>Добро пожаловать в Gincoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>Так как вы впервые запустили программу, вы можете выбрать, где Dash Core будет хранить данные.</translation>
+        <source>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</source>
+        <translation>Так как вы впервые запустили программу, вы можете выбрать, где Gincoin Core будет хранить данные.</translation>
     </message>
     <message>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core скачает и сохранит копию цепочки блоков. Как минимум %1ГБ данных будет храниться в этом каталоге и размер данных будет со временем расти. В этом же каталоге будет сохранён кошелёк.</translation>
+        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Gincoin Core скачает и сохранит копию цепочки блоков. Как минимум %1ГБ данных будет храниться в этом каталоге и размер данных будет со временем расти. В этом же каталоге будет сохранён кошелёк.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1073,8 +1073,8 @@
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1325,12 +1325,12 @@
         <translation>К&amp;ошелёк</translation>
     </message>
     <message>
-        <source>Automatically start Dash Core after logging in to the system.</source>
-        <translation>Автоматически запускать Dash Core после входа в систему.</translation>
+        <source>Automatically start Gincoin Core after logging in to the system.</source>
+        <translation>Автоматически запускать Gincoin Core после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash Core on system login</source>
-        <translation>&amp;Запускать Dash Core при входе в систему</translation>
+        <source>&amp;Start Gincoin Core on system login</source>
+        <translation>&amp;Запускать Gincoin Core при входе в систему</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1377,8 +1377,8 @@
         <translation>Это пороговое значение, при достижении которого PrivateSend отключается.</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Dash Core на роутере. Работает только в том случае, если Ваш роутер поддерживает UPnP и данная функция включена.</translation>
+        <source>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для Gincoin Core на роутере. Работает только в том случае, если Ваш роутер поддерживает UPnP и данная функция включена.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1401,8 +1401,8 @@
         <translation>Сворачивать вместо закрытия. Если данная настройка будет выбрана, то приложение закроется только после выбора пункта меню Завершить.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash Core.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Dash Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Gincoin Core.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1969,8 +1969,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1989,8 +1989,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Ошибка чтения файла конфигурации мастернод: %1</translation>
     </message>
     <message>
-        <source>Dash Core didn't yet exit safely...</source>
-        <translation>Dash Core еще не завершил работу...</translation>
+        <source>Gincoin Core didn't yet exit safely...</source>
+        <translation>Gincoin Core еще не завершил работу...</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2163,8 +2163,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Использование памяти</translation>
     </message>
     <message>
-        <source>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл Dash Core из текущего каталога данных. Для больших лог-файлов эта операция может занять несколько секунд.</translation>
+        <source>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл Gincoin Core из текущего каталога данных. Для больших лог-файлов эта операция может занять несколько секунд.</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2379,8 +2379,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&amp;Разблокировать</translation>
     </message>
     <message>
-        <source>Welcome to the Dash Core RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль Dash Core.</translation>
+        <source>Welcome to the Gincoin Core RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль Gincoin Core.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -3025,8 +3025,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dash Core is shutting down...</source>
-        <translation>Dash Core выключается...</translation>
+        <source>Gincoin Core is shutting down...</source>
+        <translation>Gincoin Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3179,8 +3179,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>[тестовая сеть]</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3191,8 +3191,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Разработчики Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Разработчики Dash Core</translation>
+        <source>The Gincoin Core developers</source>
+        <translation>Разработчики Gincoin Core</translation>
     </message>
 </context>
 <context>
@@ -3789,8 +3789,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Привязаться к указанному адресу и всегда прослушивать только его. Используйте [хост]:порт для IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, Dash Core уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</source>
+        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, Gincoin Core уже запущен.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3829,8 +3829,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Это пре-релизная тестовая сборка - используйте на свой страх и риск - не используйте для добычи или торговых приложений</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Не удалось привязаться к %s на этом компьютере. Возможно, Dash Core уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Gincoin Core is probably already running.</source>
+        <translation>Не удалось привязаться к %s на этом компьютере. Возможно, Gincoin Core уже запущен.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4145,8 +4145,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+        <source>Copyright (C) 2014-%i The Gincoin Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Gincoin Core Developers</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -4165,8 +4165,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Ошибка загрузки %s: Вы не можете отключить HD режим для существующего HD кошелька</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
-        <translation>Ошибка загрузки wallet.dat: кошелёк требует более новой версии Dash Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</source>
+        <translation>Ошибка загрузки wallet.dat: кошелёк требует более новой версии Gincoin Core</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4225,8 +4225,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Проверка на непротиворечивость закончилась неудачно. Dash Core выключается.</translation>
+        <source>Initialization sanity check failed. Gincoin Core is shutting down.</source>
+        <translation>Проверка на непротиворечивость закончилась неудачно. Gincoin Core выключается.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4481,8 +4481,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Комментарий User Agent  (%s) содержит небезопасные символы.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
-        <translation>Необходимо перезаписать кошелёк: перезапустите Dash Core для завершения операции</translation>
+        <source>Wallet needed to be rewritten: restart Gincoin Core to complete</source>
+        <translation>Необходимо перезаписать кошелёк: перезапустите Gincoin Core для завершения операции</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4613,8 +4613,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Максимальная сумма комиссии (в %s), допустимая в одной транзакции. Установка слишком низкого значения может привести к невозможности отправить большие транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
-        <translation>Пожалуйста, убедитесь что дата и время на Вашем компьютере выставлены правильно! Dash Core не сможет работать корректно, если часы настроены неверно.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Gincoin Core will not work properly.</source>
+        <translation>Пожалуйста, убедитесь что дата и время на Вашем компьютере выставлены правильно! Gincoin Core не сможет работать корректно, если часы настроены неверно.</translation>
     </message>
     <message>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>

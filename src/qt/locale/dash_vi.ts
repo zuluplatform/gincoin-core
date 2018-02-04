@@ -188,8 +188,8 @@
         <translation>Ví đã được mã hoá.</translation>
     </message>
     <message>
-        <source>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Dash Core sẽ được đóng lại để hoàn thành quá trình mã hoá. Hãy nhớ rằng mã hoá ví của bạn không thể hoàn toàn bảo vệ dash của bạn khỏi bị ăn cắp bởi việc máy tính của bạn nhiễm mã độc.</translation>
+        <source>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <translation>Gincoin Core sẽ được đóng lại để hoàn thành quá trình mã hoá. Hãy nhớ rằng mã hoá ví của bạn không thể hoàn toàn bảo vệ dash của bạn khỏi bị ăn cắp bởi việc máy tính của bạn nhiễm mã độc.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -242,12 +242,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Có lỗi nghiêm trọng xảy ra. Dash Core không thể tiếp tục một cách an toàn được nên phải thoát ra.</translation>
+        <source>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</source>
+        <translation>Có lỗi nghiêm trọng xảy ra. Gincoin Core không thể tiếp tục một cách an toàn được nên phải thoát ra.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -306,12 +306,12 @@
         <translation>Thoát ứng dụng</translation>
     </message>
     <message>
-        <source>&amp;About Dash Core</source>
-        <translation>&amp;Về Dash Core</translation>
+        <source>&amp;About Gincoin Core</source>
+        <translation>&amp;Về Gincoin Core</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Hiển thị thông tin về Dash Core</translation>
+        <source>Show information about Gincoin Core</source>
+        <translation>Hiển thị thông tin về Gincoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -326,8 +326,8 @@
         <translation>&amp;Tuỳ chọn...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dash Core</source>
-        <translation>Thay đổi các tuỳ chọn cấu hình cho Dash Core</translation>
+        <source>Modify configuration options for Gincoin Core</source>
+        <translation>Thay đổi các tuỳ chọn cấu hình cho Gincoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -482,8 +482,8 @@
         <translation>&amp;Các Tuỳ chọn dòng lệnh</translation>
     </message>
     <message>
-        <source>Show the Dash Core help message to get a list with possible Dash Core command-line options</source>
-        <translation>Hiển thị thông tin hướng dẫn Dash Core để lấy một danh sách các tuỳ chọn dòng lệnh có thể dùng với Dash Core</translation>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</source>
+        <translation>Hiển thị thông tin hướng dẫn Gincoin Core để lấy một danh sách các tuỳ chọn dòng lệnh có thể dùng với Gincoin Core</translation>
     </message>
     <message>
         <source>&amp;PrivateSend information</source>
@@ -514,8 +514,8 @@
         <translation>Bảng Thanh công cụ</translation>
     </message>
     <message>
-        <source>Dash Core client</source>
-        <translation>Phần mềm Dash Core</translation>
+        <source>Gincoin Core client</source>
+        <translation>Phần mềm Gincoin Core</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Dash network</source>
@@ -982,8 +982,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -994,8 +994,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Dash Core</source>
-        <translation>Về Dash Core</translation>
+        <source>About Gincoin Core</source>
+        <translation>Về Gincoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1053,16 +1053,16 @@
         <translation>Chào mừng</translation>
     </message>
     <message>
-        <source>Welcome to Dash Core.</source>
-        <translation>Chào mừng đến với Dash Core.</translation>
+        <source>Welcome to Gincoin Core.</source>
+        <translation>Chào mừng đến với Gincoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>Đây là lần đầu tiên chương trình được khởi động, bạn có thể chọn nơi mà Dash Core sẽ lưu dữ liệu.</translation>
+        <source>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</source>
+        <translation>Đây là lần đầu tiên chương trình được khởi động, bạn có thể chọn nơi mà Gincoin Core sẽ lưu dữ liệu.</translation>
     </message>
     <message>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core sẽ tải và lưu một bản của sổ cái Dash. Ít nhất %1GB dữ liệu sẽ được lưu trong thư mục này, và nó sẽ tăng lên theo thời gian. Ví của bạn cũng sẽ được lưu trong thư mục này.</translation>
+        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Gincoin Core sẽ tải và lưu một bản của sổ cái Dash. Ít nhất %1GB dữ liệu sẽ được lưu trong thư mục này, và nó sẽ tăng lên theo thời gian. Ví của bạn cũng sẽ được lưu trong thư mục này.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1073,8 +1073,8 @@
         <translation>Sử dụng thư mục dữ liệu tuỳ chọn:</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1325,12 +1325,12 @@
         <translation>&amp;Ví</translation>
     </message>
     <message>
-        <source>Automatically start Dash Core after logging in to the system.</source>
-        <translation>Tự động khởi động Dash Core sau khi đăng nhập vào hệ thống.</translation>
+        <source>Automatically start Gincoin Core after logging in to the system.</source>
+        <translation>Tự động khởi động Gincoin Core sau khi đăng nhập vào hệ thống.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash Core on system login</source>
-        <translation>Khởi động Dash Core khi đăng nhập hệ thống</translation>
+        <source>&amp;Start Gincoin Core on system login</source>
+        <translation>Khởi động Gincoin Core khi đăng nhập hệ thống</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1377,8 +1377,8 @@
         <translation>Số lượng này hoạt động như là một ngưỡng để tắt PrivateSend khi nó được chạm tới.</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Tự động mở cổng cho phần mềm Dash Core trên rounter. Điều này chỉ hoạt động được khi rounter của bạn hỗ trợ UpnP và tính năng đó được bật lên.</translation>
+        <source>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Tự động mở cổng cho phần mềm Gincoin Core trên rounter. Điều này chỉ hoạt động được khi rounter của bạn hỗ trợ UpnP và tính năng đó được bật lên.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1401,8 +1401,8 @@
         <translation>Thu nhỏ thay vì thoát khỏi ứng dụng khi cửa sổ được đóng lại. Khi tuỳ chọn này được bật, ứng dụng sẽ được đóng chỉ sau khi chọn chức năng Thoát trên menu.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash Core.</source>
-        <translation>Ngôn ngữa giao diện có thể được chọn ở đây. Tuỳ chọn này có tác dụng ngay sau khi bạn khởi động lại phần mềm Dash Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</source>
+        <translation>Ngôn ngữa giao diện có thể được chọn ở đây. Tuỳ chọn này có tác dụng ngay sau khi bạn khởi động lại phần mềm Gincoin Core.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items.&lt;br/&gt;%s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1969,8 +1969,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1989,8 +1989,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Lỗi khi đọc file cấu hình masternode: %1</translation>
     </message>
     <message>
-        <source>Dash Core didn't yet exit safely...</source>
-        <translation>Dash Core đã bị tắt không an toàn...</translation>
+        <source>Gincoin Core didn't yet exit safely...</source>
+        <translation>Gincoin Core đã bị tắt không an toàn...</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2163,8 +2163,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Bộ nhớ sử dụng</translation>
     </message>
     <message>
-        <source>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Mở file theo dõi lỗi Dash Core từ trong thư mục dữ liệu hiện tại. Nó có thể mất vài giây cho những file log lớn.</translation>
+        <source>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Mở file theo dõi lỗi Gincoin Core từ trong thư mục dữ liệu hiện tại. Nó có thể mất vài giây cho những file log lớn.</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2379,8 +2379,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&amp;Bor</translation>
     </message>
     <message>
-        <source>Welcome to the Dash Core RPC console.</source>
-        <translation>Chào mừng đến với bảng điều khiển Dash Core RPC</translation>
+        <source>Welcome to the Gincoin Core RPC console.</source>
+        <translation>Chào mừng đến với bảng điều khiển Gincoin Core RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -3025,8 +3025,8 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dash Core is shutting down...</source>
-        <translation>Dash Core đang được tắt...</translation>
+        <source>Gincoin Core is shutting down...</source>
+        <translation>Gincoin Core đang được tắt...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3179,8 +3179,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>[mạng thử]</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Gincoin Core</source>
+        <translation>Gincoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3191,8 +3191,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Nhóm phát triển Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Nhóm phát triển Dash Core</translation>
+        <source>The Gincoin Core developers</source>
+        <translation>Nhóm phát triển Gincoin Core</translation>
     </message>
 </context>
 <context>
@@ -3789,8 +3789,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Liên kết với địa chỉ nhất định và luôn luôn lắng nghe trên đó. Sử dụng ký hiệu [host]:port cho IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Không nhận được một khoá trong thư mục %s. Dash Core có thể đã đang chạy.</translation>
+        <source>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</source>
+        <translation>Không nhận được một khoá trong thư mục %s. Gincoin Core có thể đã đang chạy.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3829,8 +3829,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Đây là phiên bản chưa chính thức - hãy dùng và tự chấp nhận mạo hiểm - đừng dùng để đào coin hoặc các ứng dụng thương mại.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Không thể để ràng buộc vào %s trên máy tính này. Dash Core có thể đã chạy.</translation>
+        <source>Unable to bind to %s on this computer. Gincoin Core is probably already running.</source>
+        <translation>Không thể để ràng buộc vào %s trên máy tính này. Gincoin Core có thể đã chạy.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4145,8 +4145,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Bản quyền (C) 2009-%i bởi Nhóm phát triển Bitcoin Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Bản quyền (C) 2014-%i bởi Nhóm phát triển Dash Core</translation>
+        <source>Copyright (C) 2014-%i The Gincoin Core Developers</source>
+        <translation>Bản quyền (C) 2014-%i bởi Nhóm phát triển Gincoin Core</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -4165,8 +4165,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Lỗi khi tải %s: Bạn có thể tắt HD trên ví đã có HD.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
-        <translation>Lỗi nạp wallet.dat: Ví cần một phiên bản mới hơn của Dash Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</source>
+        <translation>Lỗi nạp wallet.dat: Ví cần một phiên bản mới hơn của Gincoin Core</translation>
     </message>
     <message>
         <source>Failed to load fulfilled requests cache from</source>
@@ -4225,8 +4225,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Khởi tạo việc kiểm tra tính đúng đắn thất bại. Dash Core đang được tắt.</translation>
+        <source>Initialization sanity check failed. Gincoin Core is shutting down.</source>
+        <translation>Khởi tạo việc kiểm tra tính đúng đắn thất bại. Gincoin Core đang được tắt.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4481,8 +4481,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Bình luận User Agent (%s) có chứa những ký tự không an toàn.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
-        <translation>Ví cần được ghi lại: khởi động lại Dash Core để hoàn tất</translation>
+        <source>Wallet needed to be rewritten: restart Gincoin Core to complete</source>
+        <translation>Ví cần được ghi lại: khởi động lại Gincoin Core để hoàn tất</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -4613,8 +4613,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Tổng phí tối đa (trong %s) để sử dụng trong một giao dịch đơn; thiết lập tham số này quá thấp có thể khiến bỏ qua những giao dịch lớn (ngầm định: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
-        <translation>Hãy kiểm tra ngày giờ trên máy tính của bạn để đảm bảo chúng được chính xác. Nếu đồng hồ của bạn không đúng Dash Core sẽ hoạt động không chính xác.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Gincoin Core will not work properly.</source>
+        <translation>Hãy kiểm tra ngày giờ trên máy tính của bạn để đảm bảo chúng được chính xác. Nếu đồng hồ của bạn không đúng Gincoin Core sẽ hoạt động không chính xác.</translation>
     </message>
     <message>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>

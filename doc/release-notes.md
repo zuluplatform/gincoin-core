@@ -131,6 +131,8 @@ Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
 Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
+Gincoin Core tree 0.12.2.x was a fork of Dash Core tree 0.12.2.
+
 These release are considered obsolete. Old release notes can be found here:
 
 - [v0.12.2.2](release-notes/dash/release-notes-0.12.2.2.md) released Dec/17/2017

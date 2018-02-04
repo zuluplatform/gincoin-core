@@ -188,7 +188,7 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
-        <source>Dash Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <source>Gincoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
         <translation>達世幣核心現在要關閉，以便完成加密程序。請注意，加密錢包不能完全防止入侵你的電腦的惡意程式偷取達世幣。</translation>
     </message>
     <message>
@@ -242,11 +242,11 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Gincoin Core can no longer continue safely and will quit.</source>
         <translation>發生致命錯誤。達世幣核心軟體不再能安全地繼續運行下去，程式將會關閉。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>Gincoin Core</source>
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -306,11 +306,11 @@
         <translation>結束應用程式</translation>
     </message>
     <message>
-        <source>&amp;About Dash Core</source>
+        <source>&amp;About Gincoin Core</source>
         <translation>關於達世幣核心(&amp;A)</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
+        <source>Show information about Gincoin Core</source>
         <translation>顯示達世幣核心的相關資訊</translation>
     </message>
     <message>
@@ -326,7 +326,7 @@
         <translation>選項(&amp;O)...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Dash Core</source>
+        <source>Modify configuration options for Gincoin Core</source>
         <translation>修改達世幣核心的設定選項</translation>
     </message>
     <message>
@@ -482,7 +482,7 @@
         <translation>命令列選項(&amp;C)</translation>
     </message>
     <message>
-        <source>Show the Dash Core help message to get a list with possible Dash Core command-line options</source>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin Core command-line options</source>
         <translation>顯示達世幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -514,7 +514,7 @@
         <translation>分頁工具列</translation>
     </message>
     <message>
-        <source>Dash Core client</source>
+        <source>Gincoin Core client</source>
         <translation>達世幣核心客戶端軟體</translation>
     </message>
     <message numerus="yes">
@@ -974,7 +974,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core</source>
+        <source>Gincoin Core</source>
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -986,7 +986,7 @@
         <translation>(%1 位元)</translation>
     </message>
     <message>
-        <source>About Dash Core</source>
+        <source>About Gincoin Core</source>
         <translation>關於達世幣核心</translation>
     </message>
     <message>
@@ -1045,15 +1045,15 @@
         <translation>歡迎</translation>
     </message>
     <message>
-        <source>Welcome to Dash Core.</source>
+        <source>Welcome to Gincoin Core.</source>
         <translation>歡迎使用達世幣核心</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Gincoin Core will store its data.</source>
         <translation>因為這是程式第一次啓動，你可以選擇達世幣核心儲存資料的地方。</translation>
     </message>
     <message>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>達世幣核心會下載並儲存一份達世幣區塊鏈的副本。至少有 %1GB 的資料會儲存到這個目錄中，並且還會持續增長。另外錢包資料也會儲存在這個目錄。</translation>
     </message>
     <message>
@@ -1065,7 +1065,7 @@
         <translation>使用自定的資料目錄:</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>Gincoin Core</source>
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -1317,11 +1317,11 @@
         <translation>錢包(&amp;W)</translation>
     </message>
     <message>
-        <source>Automatically start Dash Core after logging in to the system.</source>
+        <source>Automatically start Gincoin Core after logging in to the system.</source>
         <translation>在登入系統後自動啓動達世幣核心。</translation>
     </message>
     <message>
-        <source>&amp;Start Dash Core on system login</source>
+        <source>&amp;Start Gincoin Core on system login</source>
         <translation>系統登入時啟動達世幣核心(&amp;S)</translation>
     </message>
     <message>
@@ -1365,7 +1365,7 @@
         <translation>此金額為關閉匿名發送的門檻。</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Gincoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動在路由器上開放達世幣核心客戶端的通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
     </message>
     <message>
@@ -1389,7 +1389,7 @@
         <translation>當視窗關閉時，把應用程式縮到最小，而不是結束。當勾選這個選項時，只能夠用選單中的結束來關掉應用程式。</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash Core.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Gincoin Core.</source>
         <translation>可以在這裡設定用戶介面的語言。這個設定在重啓達世幣核心後才會生效。</translation>
     </message>
     <message>
@@ -1945,7 +1945,7 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Dash Core</source>
+        <source>Gincoin Core</source>
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -1965,7 +1965,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>讀取主節點配置文件時出錯: %1</translation>
     </message>
     <message>
-        <source>Dash Core didn't yet exit safely...</source>
+        <source>Gincoin Core didn't yet exit safely...</source>
         <translation>達世幣核心程序還沒有安全退出...</translation>
     </message>
     <message>
@@ -2139,7 +2139,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>內存使用情況</translation>
     </message>
     <message>
-        <source>Open the Dash Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Gincoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓達世幣核心的除錯紀錄檔。當紀錄檔很大時，可能會花好幾秒的時間。</translation>
     </message>
     <message>
@@ -2355,7 +2355,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>解禁(&amp;U)</translation>
     </message>
     <message>
-        <source>Welcome to the Dash Core RPC console.</source>
+        <source>Welcome to the Gincoin Core RPC console.</source>
         <translation>歡迎使用達世幣核心 RPC 主控台。</translation>
     </message>
     <message>
@@ -3001,7 +3001,7 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Dash Core is shutting down...</source>
+        <source>Gincoin Core is shutting down...</source>
         <translation>達世幣核心正在關閉中...</translation>
     </message>
     <message>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>Gincoin Core</source>
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -3167,7 +3167,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>位元幣核心開發人員</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
+        <source>The Gincoin Core developers</source>
         <translation>達世幣核心開發人員</translation>
     </message>
 </context>
@@ -3765,7 +3765,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>和指定的位址繫結，並且一直在指定位址聽候連線。IPv6 請用 [主機]:通訊埠 這種格式</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Gincoin Core is probably already running.</source>
         <translation>沒辦法鎖定資料目錄 %s。達世幣核心可能已經在執行了。</translation>
     </message>
     <message>
@@ -3805,7 +3805,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>這是個還沒發表的測試版本 - 使用請自負風險 - 請不要用來開採或商業應用</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Gincoin Core is probably already running.</source>
         <translation>沒辦法繫結在這台電腦上的 %s 。達世幣核心可能已經在執行了。</translation>
     </message>
     <message>
@@ -4077,7 +4077,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>版權為位元幣核心開發人員自西元 2009 至 %i 年起所有</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <source>Copyright (C) 2014-%i The Gincoin Core Developers</source>
         <translation>版權為達世幣核心開發人員自西元 2014 至 %i 年起所有</translation>
     </message>
     <message>
@@ -4093,7 +4093,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>連接到主節點時發生錯誤。</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gincoin Core</source>
         <translation>載入 wallet.dat 檔案時發生錯誤: 這個錢包需要新版的達世幣核心</translation>
     </message>
     <message>
@@ -4149,7 +4149,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>資訊</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
+        <source>Initialization sanity check failed. Gincoin Core is shutting down.</source>
         <translation>初始化時的基本檢查失敗了。達世幣核心即將關閉。</translation>
     </message>
     <message>
@@ -4393,7 +4393,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>用戶代理註釋 (%s) 包含不安全的字符。</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Dash Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Gincoin Core to complete</source>
         <translation>錢包需要重寫: 請重新啓動達世幣核心來完成</translation>
     </message>
     <message>
@@ -4505,7 +4505,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>單一的錢包交易允許付出最高的總手續費 (共 %s) ，設定太低的話，可能會無法進行資料量大的交易(預設值: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Dash Core will not work properly.</source>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong Gincoin Core will not work properly.</source>
         <translation>請檢查電腦日期和時間是否正確！達世幣核心沒辦法在時鐘不準的情況下正常運作。</translation>
     </message>
     <message>

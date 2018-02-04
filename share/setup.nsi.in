@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
-!define COMPANY "Dash Core project"
+!define COMPANY "Gincoin Core project"
 !define URL https://www.dash.org/
 
 # MUI Symbol Definitions
@@ -59,7 +59,7 @@ XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.@CLIENT_VERSION_BUILD@
-VIAddVersionKey ProductName "Dash Core"
+VIAddVersionKey ProductName "Gincoin Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
