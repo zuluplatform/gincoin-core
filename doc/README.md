@@ -1,11 +1,11 @@
 Gincoin Core 0.12.1
 =====================
 
-This is the official reference wallet for Dash digital currency and comprises the backbone of the Dash peer-to-peer network. You can [download Gincoin Core](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Gincoin digital currency and comprises the backbone of the Gincoin peer-to-peer network. You can [download Gincoin Core](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Dash on your native platform.
+The following are some helpful notes on how to run Gincoin on your native platform.
 
 ### Unix
 

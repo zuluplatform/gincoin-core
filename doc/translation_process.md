@@ -8,8 +8,6 @@ Transifex is setup to monitor the Github repo for updates, and when code contain
 
 Multiple language support is critical in assisting Dash’s global adoption, and growth. One of Dash’s greatest strengths is cross-boarder money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex Dash project](https://www.transifex.com/projects/p/dash/) to assist in translations. You should also join the translation mailing list for announcements - see details below.
-
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
 `dash_xx_YY.ts or dash_xx.ts`
@@ -64,12 +62,6 @@ password = PASSWORD
 token =
 username = USERNAME
 ```
-
-**For Windows**
-
-Please see [http://docs.transifex.com/developer/client/setup#windows](http://docs.transifex.com/developer/client/setup#windows) for details on installation.
-
-The Transifex Dash project config file is included as part of the repo. It can be found at `.tx/config`, however you shouldn’t need change anything.
 
 ### Synchronising translations
 To assist in updating translations, we have created a script to help.

@@ -1185,7 +1185,7 @@ class NodeConn(asyncore.dispatcher):
         vt.addrFrom.ip = "0.0.0.0"
         vt.addrFrom.port = 0
         self.send_message(vt, True)
-        print 'MiniNode: Connecting to Dash Node IP # ' + dstaddr + ':' \
+        print 'MiniNode: Connecting to Gincoin Node IP # ' + dstaddr + ':' \
             + str(dstport)
 
         try:

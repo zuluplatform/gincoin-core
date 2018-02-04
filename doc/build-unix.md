@@ -179,7 +179,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your Dash installation more secure by making certain attacks impossible to
+To help make your Gincoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 

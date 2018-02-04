@@ -51,7 +51,7 @@ QT_TRANSLATE_NOOP("dash-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("dash-core", ""
-"Disable all Dash specific functionality (Masternodes, PrivateSend, "
+"Disable all Gincoin specific functionality (Masternodes, PrivateSend, "
 "InstantSend, Governance) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("dash-core", ""
 "Discover own IP addresses (default: 1 when listening and no -externalip or -"

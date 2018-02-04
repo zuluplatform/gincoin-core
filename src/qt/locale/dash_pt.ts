@@ -62,12 +62,12 @@
         <translation>Endereços para recepção</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes são os endereços Dash para envio de pagamentos. Confirme sempre a quantia e o endereço antes de enviar as moedas.</translation>
+        <source>These are your Gincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes são os endereços Gincoin para envio de pagamentos. Confirme sempre a quantia e o endereço antes de enviar as moedas.</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes são os seus endereços Dash para receber pagamentos. É recomendado que seja usado um novo endereço para cada transacção.</translation>
+        <source>These are your Gincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes são os seus endereços Gincoin para receber pagamentos. É recomendado que seja usado um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Dash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>O cliente Dash irá fechar para finalizar o processo de cifra. Lembre-se que cifrar a sua carteira não consegue proteger totalmente as suas dashs contra roubos feitos por malware presente no seu computador.</translation>
+        <translation>O cliente Gincoin irá fechar para finalizar o processo de cifra. Lembre-se que cifrar a sua carteira não consegue proteger totalmente as suas dashs contra roubos feitos por malware presente no seu computador.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -255,7 +255,7 @@
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a Gincoin address</source>
         <translation>Enviar moedas para um endereço Dash</translation>
     </message>
     <message>
@@ -355,16 +355,16 @@
         <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
-        <translation>Assine mensagens com os seus endereços Dash para provar que são seus</translation>
+        <source>Sign messages with your Gincoin addresses to prove you own them</source>
+        <translation>Assine mensagens com os seus endereços Gincoin para provar que são seus</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar Mensagem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
-        <translation>Verifica mensagens para garantir que foram assinadas com um endereço Dash específico</translation>
+        <source>Verify messages to ensure they were signed with specified Gincoin addresses</source>
+        <translation>Verifica mensagens para garantir que foram assinadas com um endereço Gincoin específico</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -459,7 +459,7 @@
         <translation><numerusform>%n bloco do histórico de transacções processado.</numerusform><numerusform>%n blocos do histórico de transacções processados.</numerusform></translation>
     </message>
     <message>
-        <source>Show the Gincoin Core help message to get a list with possible Dash command-line options</source>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin command-line options</source>
         <translation>Mostra a mensagem de ajuda do Gincoin Core para obter a lista com as possíveis opções de linha de comandos</translation>
     </message>
     <message>
@@ -483,7 +483,7 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to Gincoin network</source>
         <translation><numerusform>%n ligação activa à rede Dash</numerusform><numerusform>%n ligações activas à rede Dash</numerusform></translation>
     </message>
     <message>
@@ -943,8 +943,8 @@ Endereço: %4
         <translation>Editar endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
-        <translation>O endereço introduzido "%1" não é um endereço Dash válido.</translation>
+        <source>The entered address "%1" is not a valid Gincoin address.</source>
+        <translation>O endereço introduzido "%1" não é um endereço Gincoin válido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1052,7 +1052,7 @@ Endereço: %4
         <translation>Como esta é a primeira vez que o programa é executado, pode escolher onde o cliente Gincoin Core irá guardar os seus dados.</translation>
     </message>
     <message>
-        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Gincoin Core will download and store a copy of the Gincoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>O cliente Gincoin Core irá descarregar e guardar uma copia da cadeia de blocos Dash. Pelo menos %1GB de dados serão guardados nesta pasta e irá aumentar com o tempo. A carteira também ficará guardada nesta pasta.</translation>
     </message>
     <message>
@@ -1118,12 +1118,12 @@ Endereço: %4
         <translation>&amp;Geral</translation>
     </message>
     <message>
-        <source>Automatically start Dash after logging in to the system.</source>
-        <translation>Executar automaticamente o cliente Dash quando entrar no sistema.</translation>
+        <source>Automatically start Gincoin after logging in to the system.</source>
+        <translation>Executar automaticamente o cliente Gincoin quando entrar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash on system login</source>
-        <translation>&amp;Iniciar o cliente Dash ao entrar no sistema</translation>
+        <source>&amp;Start Gincoin on system login</source>
+        <translation>&amp;Iniciar o cliente Gincoin ao entrar no sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1150,8 +1150,8 @@ Endereço: %4
         <translation>Esta quantia actua como um limite, a partir do qual o Darksend é desligado.</translation>
     </message>
     <message>
-        <source>Amount of Dash to keep anonymized</source>
-        <translation>Quantia de Dash a manter anonimizada</translation>
+        <source>Amount of Gincoin to keep anonymized</source>
+        <translation>Quantia de Gincoin a manter anonimizada</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1170,8 +1170,8 @@ Endereço: %4
         <translation>Aceitar ligações de entrada</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
-        <translation>Efectuar a ligação à rede Dash através de um proxy SOCKS5.</translation>
+        <source>Connect to the Gincoin network through a SOCKS5 proxy.</source>
+        <translation>Efectuar a ligação à rede Gincoin através de um proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1202,8 +1202,8 @@ Endereço: %4
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>Automatically open the Dash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente Dash no router. Isto só funciona quando o seu router suporta UPnP e este está activo.</translation>
+        <source>Automatically open the Gincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente Gincoin no router. Isto só funciona quando o seu router suporta UPnP e este está activo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1343,8 +1343,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>De</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desactualizada. A sua carteira sincroniza automaticamente com a rede Dash assim que for estabelecida uma ligação, mas este processo ainda não terminou.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desactualizada. A sua carteira sincroniza automaticamente com a rede Gincoin assim que for estabelecida uma ligação, mas este processo ainda não terminou.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1584,8 +1584,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Endereço de pagamento inválido %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
-        <translation>O URI não pode ser carregado! Isto pode ser causado por um endereço Dash inválido ou parâmetros do URI incorrectos.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Gincoin address or malformed URI parameters.</source>
+        <translation>O URI não pode ser carregado! Isto pode ser causado por um endereço Gincoin inválido ou parâmetros do URI incorrectos.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1670,8 +1670,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Quantia</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
-        <translation>Insira um endereço Dash (ex. %1)</translation>
+        <source>Enter a Gincoin address (e.g. %1)</source>
+        <translation>Insira um endereço Gincoin (ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1760,8 +1760,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Número de ligações</translation>
     </message>
     <message>
-        <source>Open the Dash debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir o ficheiro de registo de depuração Dash a partir da pasta de dados actual. Para grandes ficheiros de registo pode demorar alguns segundos.</translation>
+        <source>Open the Gincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abrir o ficheiro de registo de depuração Gincoin a partir da pasta de dados actual. Para grandes ficheiros de registo pode demorar alguns segundos.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1968,7 +1968,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Saída:</translation>
     </message>
     <message>
-        <source>Welcome to the Dash RPC console.</source>
+        <source>Welcome to the Gincoin RPC console.</source>
         <translation>Bem-vindo à consola RPC Dash</translation>
     </message>
     <message>
@@ -2031,7 +2031,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>R&amp;eutilizar um endereço de recebimento existente (não recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Gincoin network.</source>
         <translation>Mensagem opcional para anexar à solicitação de pagamento, que será mostrada quando a solicitação for aberta. Nota: A mensagem não será enviada com o pagamento através da rede Dash.</translation>
     </message>
     <message>
@@ -2043,7 +2043,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Rótulo opcional para associar com o novo endereço de recebimento.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Gincoin network.</source>
         <translation>Mensagem opcional para anexar à solicitação de pagamento, que será mostrada quando a solicitação for aberta. &lt;br&gt;Nota: A mensagem não será enviada com o pagamento através da rede Dash.</translation>
     </message>
     <message>
@@ -2480,8 +2480,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Pagar somente a taxa mínima de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
-        <translation>Aviso: Endereço Dash inválido</translation>
+        <source>Warning: Invalid Gincoin address</source>
+        <translation>Aviso: Endereço Gincoin inválido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2503,8 +2503,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&amp;Pagar a:</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
-        <translation>O endereço Dash para onde enviar o pagamento</translation>
+        <source>The Gincoin address to send the payment to</source>
+        <translation>O endereço Gincoin para onde enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2543,7 +2543,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mensagem:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Gincoin network.</source>
         <translation>Mensagem que foi anexada ao dash: URI e que será guardada com a transacção para sua referência. Nota: Esta mensagem não será enviada para a rede Dash.</translation>
     </message>
     <message>
@@ -2593,8 +2593,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Pode assinar mensagens com os seus endereços para provar que são seus. Tenha atenção para não assinar mensagens vagas, já que, ataques de phishing podem levá-lo a assinar a sua própria identidade para os atacantes. Apenas assine declarações detalhadas com as quais concorde.</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
-        <translation>Endereço Dash com o qual deseja assinar a mensagem</translation>
+        <source>The Gincoin address to sign the message with</source>
+        <translation>Endereço Gincoin com o qual deseja assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2625,7 +2625,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Copiar a assinatura actual para a área de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this Gincoin address</source>
         <translation>Assinar a mensagem para provar que é o proprietário deste endereço Dash</translation>
     </message>
     <message>
@@ -2649,12 +2649,12 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Introduza o endereço de assinatura, mensagem (assegure-se que copia exactamente as quebras de linha, espaços, tabulações, etc) e assinatura abaixo para verificar a mensagem. Tenha atenção para não ler mais na assinatura do que o que estiver na mensagem assinada, para evitar ser enganado por um atacante que se encontre entre si e quem assinou a mensagem.</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
-        <translation>Endereço Dash com o qual a mensagem foi assinada</translation>
+        <source>The Gincoin address the message was signed with</source>
+        <translation>Endereço Gincoin com o qual a mensagem foi assinada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
-        <translation>Verificar a mensagem de forma a garantir que foi assinada com o endereço Dash especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Gincoin address</source>
+        <translation>Verificar a mensagem de forma a garantir que foi assinada com o endereço Gincoin especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4185,7 +4185,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opções RPC SSL: (para instruções de configuração SSL dirija-se à Dash Wiki)</translation>
+        <translation>Opções RPC SSL: (para instruções de configuração SSL dirija-se à Gincoin Wiki)</translation>
     </message>
     <message>
         <source>RPC server options:</source>

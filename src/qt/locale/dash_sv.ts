@@ -58,11 +58,11 @@
         <translation>Mottagaradresser</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Gincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>De här är dina Dash-adresser för att skicka betalningar. Kontrollera alltid mängden och mottagaradressen innan du skickar mynt.</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Gincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>De här är dina Dash-adresser för betalningsmottagningar. Det rekommenderas att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>Dash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Dash kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina Dash stjäls av skadeprogram som har infekterat din dator.</translation>
+        <translation>Dash kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina Gincoin stjäls av skadeprogram som har infekterat din dator.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -244,7 +244,7 @@
         <translation>&amp;Skicka</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a Gincoin address</source>
         <translation>Skicka mynt till en Dash-adress</translation>
     </message>
     <message>
@@ -340,7 +340,7 @@
         <translation>Signera &amp;meddelande...</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your Gincoin addresses to prove you own them</source>
         <translation>Signera meddelanden med dina Dash-adresser för att bevisa att du äger dem</translation>
     </message>
     <message>
@@ -348,7 +348,7 @@
         <translation>&amp;Bekräfta meddelande...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified Gincoin addresses</source>
         <translation>Bekräfta meddelanden för att garantera att de signerades med de angivna Dash-adresserna</translation>
     </message>
     <message>
@@ -412,7 +412,7 @@
         <translation>&amp;Kommandoradalternativ</translation>
     </message>
     <message>
-        <source>Show the Gincoin Core help message to get a list with possible Dash command-line options</source>
+        <source>Show the Gincoin Core help message to get a list with possible Gincoin command-line options</source>
         <translation>Visa Gincoin Core-hjälpmeddelandet för att få en lista med möjliga Dash-kommandoradalternativ</translation>
     </message>
     <message>
@@ -841,7 +841,7 @@ Adress: %4
         <translation>Redigera avsändaradress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid Gincoin address.</source>
         <translation>Den angivna adressen "%1" är inte en giltig Dash-adress.</translation>
     </message>
     <message>
@@ -939,7 +939,7 @@ Adress: %4
         <translation>Då detta är första gången programmet startas kan du välja var Gincoin Core ska lagra sin data.</translation>
     </message>
     <message>
-        <source>Gincoin Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Gincoin Core will download and store a copy of the Gincoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Gincoin Core kommer att laddas ned och lagra en kopia av Dash:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
     </message>
     <message>
@@ -989,12 +989,12 @@ Adress: %4
         <translation>&amp;Huvud</translation>
     </message>
     <message>
-        <source>Automatically start Dash after logging in to the system.</source>
-        <translation>Starta Dash automatiskt efter systeminloggning.</translation>
+        <source>Automatically start Gincoin after logging in to the system.</source>
+        <translation>Starta Gincoin automatiskt efter systeminloggning.</translation>
     </message>
     <message>
-        <source>&amp;Start Dash on system login</source>
-        <translation>&amp;Starta Dash vid systeminloggning</translation>
+        <source>&amp;Start Gincoin on system login</source>
+        <translation>&amp;Starta Gincoin vid systeminloggning</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1021,8 +1021,8 @@ Adress: %4
         <translation>Denna mängd fungerar som en tröskel att stänga av Darksend då det har uppnåtts.</translation>
     </message>
     <message>
-        <source>Amount of Dash to keep anonymized</source>
-        <translation>Mängd Dash att bibehålla anonymiserade</translation>
+        <source>Amount of Gincoin to keep anonymized</source>
+        <translation>Mängd Gincoin att bibehålla anonymiserade</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1049,7 +1049,7 @@ Adress: %4
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>Automatically open the Dash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Gincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Öppna Dash:s klientport automatiskt på routern. Detta fungerar bara om din router stöder UPnP och är aktiverad.</translation>
     </message>
     <message>
@@ -1102,7 +1102,7 @@ Adress: %4
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting Dash.</source>
-        <translation>Användargränssnittspråket kan ställas in här. Denna inställning träder i kraft efter att Dash startats om.</translation>
+        <translation>Användargränssnittspråket kan ställas in här. Denna inställning träder i kraft efter att Gincoin startats om.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1182,7 +1182,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gincoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Den visade informationen kan vara utdaterad. Din plånbok synkroniseras automatiskt med Dash-nätverket efter att en anslutning har etablerats men denna process har ännu inte slutförts.</translation>
     </message>
     <message>
@@ -1435,7 +1435,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Antal anslutningar</translation>
     </message>
     <message>
-        <source>Open the Dash debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Gincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Öppna Dashs avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
     </message>
     <message>
@@ -1507,7 +1507,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the Dash RPC console.</source>
+        <source>Welcome to the Gincoin RPC console.</source>
         <translation>Välkommen till Dashs RPC-konsol.</translation>
     </message>
     <message>
@@ -1542,7 +1542,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Åt&amp;eranvänd en befintlig mottagaradress (rekommenderas inte)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Gincoin network.</source>
         <translation>Ett valfritt meddelande att bifoga betalningsbegärandet vilket kommer att visas när begärandet öppnas. Observera: Meddelandet kommer inte att skickas med betalningen över Dash-nätverket.</translation>
     </message>
     <message>
@@ -1899,7 +1899,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Fel: Plånboken låstes upp enbart för att anonymisera mynt.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid Gincoin address</source>
         <translation>Varning: Ogiltig Dash-adress</translation>
     </message>
     <message>
@@ -1958,7 +1958,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Meddelande:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Gincoin network.</source>
         <translation>Ett meddelande som bifogades till Dash: URI vilket kommer att lagras med transaktionen så att du vet. Observera: Meddelandet kommer inte att skickas över Dash-nätverket.</translation>
     </message>
     <message>
@@ -2036,7 +2036,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Kopiera den nuvarande valda signaturen till systemurklippet</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this Gincoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna Dash-adress</translation>
     </message>
     <message>
@@ -2060,7 +2060,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Skriv in signeringsadressen, meddelandet, (försäkra dig om att du kopierar linjeavbrott, mellanslag, flikar med mera) och signera nedtill för att verifiera meddelandet. Var försiktig med att inte läsa in mer i signaturen än vad som finns i det signerade meddelandet för att undvika att bli lurad av en mellanhandattack.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified Gincoin address</source>
         <translation>Bekräfta meddelandet för att försäkra dig om att den signerades med den angivna Dash-adressen</translation>
     </message>
     <message>
