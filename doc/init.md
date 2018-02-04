@@ -62,7 +62,7 @@ Lock file:           `/var/lock/subsys/gincoind` (CentOS)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the dashcore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-dashcore user and group.  Access to dash-cli and other gincoind rpc clients
+dashcore user and group.  Access to gincoin-cli and other gincoind rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X

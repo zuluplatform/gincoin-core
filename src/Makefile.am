@@ -64,11 +64,11 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += dash-cli dash-tx
+  bin_PROGRAMS += gincoin-cli dash-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# dash core #
+# gincoin core #
 BITCOIN_CORE_H = \
   addrdb.h \
   activemasternode.h \
@@ -408,7 +408,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between dash-cli and dash-qt
+# cli: shared between gincoin-cli and dash-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -448,21 +448,21 @@ endif
 
 gincoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
-# dash-cli binary #
-dash_cli_SOURCES = dash-cli.cpp
-dash_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-dash_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-dash_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# gincoin-cli binary #
+gincoin_cli_SOURCES = gincoin-cli.cpp
+gincoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+gincoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gincoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-dash_cli_SOURCES += dash-cli-res.rc
+gincoin_cli_SOURCES += gincoin-cli-res.rc
 endif
 
-dash_cli_LDADD = \
+gincoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL)
-dash_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+gincoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # dash-tx binary #

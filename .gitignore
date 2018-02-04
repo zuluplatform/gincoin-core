@@ -8,7 +8,7 @@ reset-files.bash
 *.exe
 src/dash
 src/gincoind
-src/dash-cli
+src/gincoin-cli
 src/dash-tx
 src/test/test_dash
 src/qt/test/test_dash-qt
@@ -128,7 +128,7 @@ src/qt/dash-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-dash-cli
+gincoin-cli
 gincoind
 dash-qt
 make

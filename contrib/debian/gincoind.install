@@ -1,2 +1,2 @@
 usr/local/bin/gincoind usr/bin
-usr/local/bin/dash-cli usr/bin
+usr/local/bin/gincoin-cli usr/bin

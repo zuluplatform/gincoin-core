@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between dash-cli and gincoind)
+ * CBaseChainParams defines the base parameters (shared between gincoin-cli and gincoind)
  * of a given instance of the Dash system.
  */
 class CBaseChainParams

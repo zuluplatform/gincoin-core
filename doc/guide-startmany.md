@@ -87,7 +87,7 @@ If your remote server is not running, start your remote daemon as you normally w
 
 You can confirm that remote server is on the correct block by issuing
 
-```dash-cli getinfo```
+```gincoin-cli getinfo```
 
 and comparing with the official explorer at https://explorer.dash.org/chain/Dash
 
@@ -116,7 +116,7 @@ Example ```masternode start-alias mn01```
 Issue command `masternode status`
 It should return you something like that:
 ```
-dash-cli masternode status
+gincoin-cli masternode status
 {
     "outpoint" : "<collateral_output>-<collateral_output_index>",
     "service" : "<ipaddress>:<port>",
