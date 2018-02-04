@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+SystemD: gincoind.service
+Upstart: gincoind.conf
+OpenRC:  gincoind.openrc
+         gincoind.openrcconf
+CentOS:  gincoind.init
+OS X:    org.dash.gincoind.plist
 
 have been made available to assist packagers in creating node packages here.
 

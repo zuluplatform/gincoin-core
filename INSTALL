@@ -25,6 +25,6 @@ https://github.com/dashpay/dash-binaries
 
 Always verify the signatures and checksums.
 
-See doc/build-*.md for instructions on building dashd,
+See doc/build-*.md for instructions on building gincoind,
 the intended-for-services, no-graphical-interface,
 reference implementation of Dash.

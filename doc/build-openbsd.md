@@ -2,7 +2,7 @@ OpenBSD build guide
 ======================
 (updated for OpenBSD 5.7)
 
-This guide describes how to build dashd and command-line utilities on OpenBSD.
+This guide describes how to build gincoind and command-line utilities on OpenBSD.
 
 As OpenBSD is most common as a server OS, we will not bother with the GUI.
 

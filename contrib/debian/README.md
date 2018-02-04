@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package dashd/dash-qt
-for Debian-based Linux systems. If you compile dashd/dash-qt yourself, there are some useful files here.
+This directory contains files used to package gincoind/dash-qt
+for Debian-based Linux systems. If you compile gincoind/dash-qt yourself, there are some useful files here.
 
 ## dash: URI support ##
 

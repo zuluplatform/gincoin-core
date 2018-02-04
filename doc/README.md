@@ -12,7 +12,7 @@ The following are some helpful notes on how to run Gincoin on your native platfo
 Unpack the files into a directory and run:
 
 - `bin/dash-qt` (GUI) or
-- `bin/dashd` (headless)
+- `bin/gincoind` (headless)
 
 ### Windows
 

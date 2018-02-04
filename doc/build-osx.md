@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build dashd (headless client) for OSX.
+This guide will show you how to build gincoind (headless client) for OSX.
 
 Notes
 -----
@@ -55,7 +55,7 @@ NOTE: Building with Qt4 is still supported, however, doing so could result in a 
 
         make check
 
-4.  (Optional) You can also install dashd to your path:
+4.  (Optional) You can also install gincoind to your path:
 
         make install
 
@@ -77,11 +77,11 @@ Download Qt Creator from https://www.qt.io/download/. Download the "community ed
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `dashd` for your own use.
+You can ignore this section if you are building `gincoind` for your own use.
 
-dashd/dash-cli binaries are not included in the Dash-Qt.app bundle.
+gincoind/dash-cli binaries are not included in the Dash-Qt.app bundle.
 
-If you are building `dashd` or `Gincoin Core` for others, your build machine should be set up
+If you are building `gincoind` or `Gincoin Core` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -96,10 +96,10 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./dashd`, provided that you are still in the `src`
+It's now available at `./gincoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./dashd` to get the filename where it should be put, or just try these
+Run `./gincoind` to get the filename where it should be put, or just try these
 commands:
 
     echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DashCore/dash.conf"
@@ -114,6 +114,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./dashd -daemon # to start the dash daemon.
+    ./gincoind -daemon # to start the dash daemon.
     ./dash-cli --help  # for a list of command-line options.
     ./dash-cli help    # When the daemon is running, to get a list of RPC commands
