@@ -38,7 +38,7 @@ def determine_db_dir():
         return os.path.expanduser("~/Library/Application Support/GincoinCore/")
     elif platform.system() == "Windows":
         return os.path.join(os.environ['APPDATA'], "GincoinCore")
-    return os.path.expanduser("~/.dashcore")
+    return os.path.expanduser("~/.gincoincore")
 
 def read_bitcoin_config(dbdir):
     """Read the dash.conf file from dbdir, returns dictionary of settings"""

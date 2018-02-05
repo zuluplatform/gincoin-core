@@ -519,7 +519,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\GincoinCore
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\GincoinCore
     // Mac: ~/Library/Application Support/GincoinCore
-    // Unix: ~/.dashcore
+    // Unix: ~/.gincoincore
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "GincoinCore";
@@ -535,7 +535,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/GincoinCore";
 #else
     // Unix
-    return pathRet / ".dashcore";
+    return pathRet / ".gincoincore";
 #endif
 #endif
 }
