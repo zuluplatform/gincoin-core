@@ -9,7 +9,7 @@ reset-files.bash
 src/dash
 src/gincoind
 src/gincoin-cli
-src/dash-tx
+src/gincoin-tx
 src/test/test_dash
 src/qt/test/test_dash-qt
 src/bench/bench_dash
