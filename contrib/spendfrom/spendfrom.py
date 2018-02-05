@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the Dash Core data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/DashCore/")
+        return os.path.expanduser("~/Library/Application Support/GincoinCore/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "DashCore")
+        return os.path.join(os.environ['APPDATA'], "GincoinCore")
     return os.path.expanduser("~/.dashcore")
 
 def read_bitcoin_config(dbdir):

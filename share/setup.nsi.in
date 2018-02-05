@@ -50,9 +50,9 @@ Var StartMenuGroup
 # Installer attributes
 OutFile @abs_top_srcdir@/dashcore-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-InstallDir $PROGRAMFILES64\DashCore
+InstallDir $PROGRAMFILES64\GincoinCore
 !else
-InstallDir $PROGRAMFILES\DashCore
+InstallDir $PROGRAMFILES\GincoinCore
 !endif
 CRCCheck on
 XPStyle on

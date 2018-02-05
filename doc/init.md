@@ -68,9 +68,9 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/gincoind`
-Configuration file:  `~/Library/Application Support/DashCore/dash.conf`  
-Data directory:      `~/Library/Application Support/DashCore`
-Lock file:           `~/Library/Application Support/DashCore/.lock`
+Configuration file:  `~/Library/Application Support/GincoinCore/dash.conf`
+Data directory:      `~/Library/Application Support/GincoinCore`
+Lock file:           `~/Library/Application Support/GincoinCore/.lock`
 
 4. Installing Service Configuration
 -----------------------------------
