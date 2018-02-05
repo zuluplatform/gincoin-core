@@ -11,7 +11,7 @@ src/gincoind
 src/gincoin-cli
 src/gincoin-tx
 src/test/test_dash
-src/qt/test/test_dash-qt
+src/qt/test/test_gincoin-qt
 src/bench/bench_dash
 
 # autoreconf
@@ -81,12 +81,12 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-dash-qt
+gincoin-qt
 Dash-Qt.app
 
 # Unit-tests
 Makefile.test
-dash-qt_test
+gincoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -124,13 +124,13 @@ share/BitcoindComparisonTool.jar
 /doc/doxygen/
 
 libdashconsensus.pc
-src/qt/dash-qt.bash
+src/qt/gincoin-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
 gincoin-cli
 gincoind
-dash-qt
+gincoin-qt
 make
 
 .idea
