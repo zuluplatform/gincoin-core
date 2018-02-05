@@ -114,7 +114,7 @@ namespace GUIUtil
     // Open debug.log
     void openDebugLogfile();
 	
-    // Open dash.conf
+    // Open gincoin.conf
     void openConfigfile();	
 
     // Open masternode.conf

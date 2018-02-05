@@ -68,16 +68,16 @@ mn01 127.0.0.1:10111 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c8
 mn02 127.0.0.2:10111 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0
 ```
 
-## Update dash.conf on server
+## Update gincoin.conf on server
 
-If you generated a new masternode private key, you will need to update the remote `dash.conf` files.
+If you generated a new masternode private key, you will need to update the remote `gincoin.conf` files.
 
 Shut down the daemon and then edit the file.
 
-```nano .gincoincore/dash.conf```
+```nano .gincoincore/gincoin.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the `masternodeprivkey` value in your remote `dash.conf` file.
+If you generated a new masternode private key, you will need to update the `masternodeprivkey` value in your remote `gincoin.conf` file.
 
 ## Start your Masternodes
 

@@ -9,7 +9,7 @@ Group=gincoincore
 Type=forking
 PIDFile=/var/lib/gincoind/gincoind.pid
 ExecStart=/usr/bin/gincoind -daemon -pid=/var/lib/gincoind/gincoind.pid \
--conf=/etc/dashcore/dash.conf -datadir=/var/lib/gincoind -disablewallet
+-conf=/etc/dashcore/gincoin.conf -datadir=/var/lib/gincoind -disablewallet
 
 Restart=always
 PrivateTmp=true

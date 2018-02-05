@@ -44,7 +44,7 @@ This allows for running gincoind without having to do any manual configuration.
 relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/dash.conf`.
+see `contrib/debian/examples/gincoin.conf`.
 
 3. Paths
 ---------------------------------
@@ -54,7 +54,7 @@ see `contrib/debian/examples/dash.conf`.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/gincoind`
-Configuration file:  `/etc/dashcore/dash.conf`  
+Configuration file:  `/etc/dashcore/gincoin.conf`
 Data directory:      `/var/lib/gincoind`
 PID file:            `/var/run/gincoind/gincoind.pid` (OpenRC and Upstart) or `/var/lib/gincoind/gincoind.pid` (systemd)
 Lock file:           `/var/lock/subsys/gincoind` (CentOS)
@@ -68,7 +68,7 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/gincoind`
-Configuration file:  `~/Library/Application Support/GincoinCore/dash.conf`
+Configuration file:  `~/Library/Application Support/GincoinCore/gincoin.conf`
 Data directory:      `~/Library/Application Support/GincoinCore`
 Lock file:           `~/Library/Application Support/GincoinCore/.lock`
 
