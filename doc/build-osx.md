@@ -79,7 +79,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `gincoind` for your own use.
 
-gincoind/gincoin-cli binaries are not included in the Dash-Qt.app bundle.
+gincoind/gincoin-cli binaries are not included in the Gincoin-Qt.app bundle.
 
 If you are building `gincoind` or `Gincoin Core` for others, your build machine should be set up
 as follows for maximum compatibility:

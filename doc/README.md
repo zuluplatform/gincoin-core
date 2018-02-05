@@ -20,7 +20,7 @@ Unpack the files into a directory, and then run gincoin-qt.exe.
 
 ### OS X
 
-Drag Dash-Qt to your applications folder, and then run Dash-Qt.
+Drag Gincoin-Qt to your applications folder, and then run Gincoin-Qt.
 
 ### Need Help?
 

@@ -82,7 +82,7 @@ libconftest.dylib*
 *.qm
 Makefile
 gincoin-qt
-Dash-Qt.app
+Gincoin-Qt.app
 
 # Unit-tests
 Makefile.test
