@@ -6,7 +6,7 @@ GZIP_ENV="-9n"
 
 if BUILD_BITCOIN_LIBS
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libdashconsensus.pc
+pkgconfig_DATA = libgincoinconsensus.pc
 endif
 
 BITCOIND_BIN=$(top_builddir)/src/gincoind$(EXEEXT)

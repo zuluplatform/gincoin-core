@@ -123,7 +123,7 @@ share/BitcoindComparisonTool.jar
 .autotools
 /doc/doxygen/
 
-libdashconsensus.pc
+libgincoinconsensus.pc
 src/qt/gincoin-qt.bash
 qa/pull-tester/tests-config.sh
 
