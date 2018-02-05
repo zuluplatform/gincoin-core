@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "netbase.h"
-#include "test/test_dash.h"
+#include "test/test_gincoin.h"
 
 #include <string>
 

@@ -6,7 +6,7 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the gincoind tests manually, launch `src/test/test_dash`.
+To run the gincoind tests manually, launch `src/test/test_gincoin`.
 
 To add more gincoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that

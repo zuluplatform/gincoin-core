@@ -5,7 +5,7 @@
 #include "univalue.h"
 #include "utilstrencodings.h"
 
-#include "test/test_dash.h"
+#include "test/test_gincoin.h"
 
 #include <boost/test/unit_test.hpp>
 

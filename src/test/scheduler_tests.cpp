@@ -5,7 +5,7 @@
 #include "random.h"
 #include "scheduler.h"
 
-#include "test/test_dash.h"
+#include "test/test_gincoin.h"
 
 #include <boost/bind.hpp>
 #include <boost/random/mersenne_twister.hpp>

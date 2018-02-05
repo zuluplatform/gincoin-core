@@ -9,7 +9,7 @@ reset-files.bash
 src/gincoind
 src/gincoin-cli
 src/gincoin-tx
-src/test/test_dash
+src/test/test_gincoin
 src/qt/test/test_gincoin-qt
 src/bench/bench_gincoin
 
@@ -99,7 +99,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_dash.coverage/
+test_gincoin.coverage/
 total.coverage/
 coverage_percent.txt
 

@@ -1,9 +1,9 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_dash
+#DEB_MAKE_CHECK_TARGET = test_gincoin
 #build/gincoind::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_dash)
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_gincoin)
 
 DEB_INSTALL_EXAMPLES_gincoind += debian/examples/*
 DEB_INSTALL_MANPAGES_gincoind += debian/manpages/*

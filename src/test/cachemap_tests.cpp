@@ -3,7 +3,7 @@
 
 #include "cachemap.h"
 
-#include "test/test_dash.h"
+#include "test/test_gincoin.h"
 
 #include <boost/test/unit_test.hpp>
 
