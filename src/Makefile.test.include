@@ -125,12 +125,12 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
 CLEANFILES += $(CLEAN_BITCOIN_TEST)
 
-dash_test: $(TEST_BINARY)
+gincoin_test: $(TEST_BINARY)
 
-dash_test_check: $(TEST_BINARY) FORCE
+gincoin_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-dash_test_clean : FORCE
+gincoin_test_clean : FORCE
 	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_gincoin_OBJECTS) $(TEST_BINARY)
 
 check-local:

@@ -144,7 +144,7 @@ It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 ```bash
 DASH_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the dash directory
+# Pick some path to install BDB to, here we create a directory within the gincoin directory
 BDB_PREFIX="${DASH_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 

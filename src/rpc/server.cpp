@@ -345,19 +345,19 @@ static const CRPCCommand vRPCCommands[] =
 #endif
 
     /* Dash features */
-    { "dash",               "masternode",             &masternode,             true  },
-    { "dash",               "masternodelist",         &masternodelist,         true  },
-    { "dash",               "masternodebroadcast",    &masternodebroadcast,    true  },
-    { "dash",               "gobject",                &gobject,                true  },
-    { "dash",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
-    { "dash",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
-    { "dash",               "voteraw",                &voteraw,                true  },
-    { "dash",               "mnsync",                 &mnsync,                 true  },
-    { "dash",               "spork",                  &spork,                  true  },
-    { "dash",               "getpoolinfo",            &getpoolinfo,            true  },
-    { "dash",               "sentinelping",           &sentinelping,           true  },
+    { "gincoin",               "masternode",             &masternode,             true  },
+    { "gincoin",               "masternodelist",         &masternodelist,         true  },
+    { "gincoin",               "masternodebroadcast",    &masternodebroadcast,    true  },
+    { "gincoin",               "gobject",                &gobject,                true  },
+    { "gincoin",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
+    { "gincoin",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
+    { "gincoin",               "voteraw",                &voteraw,                true  },
+    { "gincoin",               "mnsync",                 &mnsync,                 true  },
+    { "gincoin",               "spork",                  &spork,                  true  },
+    { "gincoin",               "getpoolinfo",            &getpoolinfo,            true  },
+    { "gincoin",               "sentinelping",           &sentinelping,           true  },
 #ifdef ENABLE_WALLET
-    { "dash",               "privatesend",            &privatesend,            false },
+    { "gincoin",               "privatesend",            &privatesend,            false },
 
     /* Wallet */
     { "wallet",             "keepass",                &keepass,                true },

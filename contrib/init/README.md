@@ -5,7 +5,7 @@ Upstart: gincoind.conf
 OpenRC:  gincoind.openrc
          gincoind.openrcconf
 CentOS:  gincoind.init
-OS X:    org.dash.gincoind.plist
+OS X:    org.gincoin.gincoind.plist
 
 have been made available to assist packagers in creating node packages here.
 

@@ -131,7 +131,7 @@ public:
 };
 
 // // root node
-class CDashNetwork : public CGovernanceObject
+class CGincoinNetwork : public CGovernanceObject
 {
 private:
     std::string strName;
@@ -139,7 +139,7 @@ private:
 
 
 public:
-    CDashNetwork(UniValue objIn)
+    CGincoinNetwork(UniValue objIn)
     {
         strName = objIn["name"].get_str();
         strURL = objIn["name"].get_str();

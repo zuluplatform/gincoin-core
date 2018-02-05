@@ -33,7 +33,7 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the Dash Core data directory"""
+    """Return the default location of the Gincoin Core data directory"""
     if platform.system() == "Darwin":
         return os.path.expanduser("~/Library/Application Support/GincoinCore/")
     elif platform.system() == "Windows":
@@ -63,7 +63,7 @@ def read_bitcoin_config(dbdir):
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a Dash Core JSON-RPC server"""
+    """Connect to a Gincoin Core JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -221,9 +221,9 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get dashs from")
+                      help="addresses to get gincoins from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send dashs to")
+                      help="address to get send gincoins to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",

@@ -1,6 +1,6 @@
 [Protocol]
 exec=gincoin-qt '%u'
-protocol=dash
+protocol=gincoin
 input=none
 output=none
 helper=true

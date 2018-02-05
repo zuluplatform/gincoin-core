@@ -1,7 +1,7 @@
 Gincoin Core 0.12.1
 =====================
 
-This is the official reference wallet for Gincoin digital currency and comprises the backbone of the Gincoin peer-to-peer network. You can [download Gincoin Core](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Gincoin digital currency and comprises the backbone of the Gincoin peer-to-peer network. You can [download Gincoin Core](https://www.gincoin.io/#downloads) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -21,13 +21,6 @@ Unpack the files into a directory, and then run gincoin-qt.exe.
 ### OS X
 
 Drag Gincoin-Qt to your applications folder, and then run Gincoin-Qt.
-
-### Need Help?
-
-* See the [Dash documentation](https://dashpay.atlassian.net/wiki/display/DOC)
-for help and more information.
-* Ask for help on [#dashpay](http://webchat.freenode.net?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=dashpay).
-* Ask for help on the [DashTalk](https://dashtalk.org/) forums.
 
 Building
 ---------------------
@@ -55,10 +48,6 @@ The Gincoin Core repo's [root README](/README.md) contains relevant information 
 - [Shared Libraries](shared-libraries.md)
 - [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
-
-### Resources
-* Discuss on the [DashTalk](https://dashtalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#dashpay](http://webchat.freenode.net/?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dashpay).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

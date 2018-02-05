@@ -19,7 +19,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Gincoin"
-            VALUE "FileDescription",    "Gincoin Core (GUI node for Dash)"
+            VALUE "FileDescription",    "Gincoin Core (GUI node for Gincoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "gincoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR

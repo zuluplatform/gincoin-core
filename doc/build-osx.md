@@ -40,11 +40,11 @@ NOTE: Building with Qt4 is still supported, however, doing so could result in a 
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/dashpay/dash.git
-        cd dash
+        git clone https://github.com/gincoin/gincoin-core.git
+        cd gincoin-core
 
 2.  Build Gincoin Core:
-    This will configure and build the headless dash binaries as well as the gui (if Qt is found).
+    This will configure and build the headless gincoin binaries as well as the gui (if Qt is found).
     You can disable the gui build by passing `--without-gui` to configure.
 
         ./autogen.sh
@@ -102,7 +102,7 @@ directory. We have to first create the RPC configuration file, though.
 Run `./gincoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/GincoinCore/gincoin.conf"
+    echo -e "rpcuser=gincoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/GincoinCore/gincoin.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/GincoinCore/gincoin.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
@@ -114,6 +114,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./gincoind -daemon # to start the dash daemon.
+    ./gincoind -daemon # to start the gincoin daemon.
     ./gincoin-cli --help  # for a list of command-line options.
     ./gincoin-cli help    # When the daemon is running, to get a list of RPC commands

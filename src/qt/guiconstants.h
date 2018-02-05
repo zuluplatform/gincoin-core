@@ -50,8 +50,8 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Dash"
-#define QAPP_ORG_DOMAIN "dash.org"
+#define QAPP_ORG_NAME "Gincoin"
+#define QAPP_ORG_DOMAIN "gincoin.io"
 #define QAPP_APP_NAME_DEFAULT "Gincoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Gincoin-Qt-testnet"
 

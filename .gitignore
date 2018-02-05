@@ -34,8 +34,8 @@ config.log
 config.status
 configure
 libtool
-src/config/dash-config.h
-src/config/dash-config.h.in
+src/config/gincoin-config.h
+src/config/gincoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -61,7 +61,7 @@ libconftest.dylib*
 *.o
 *.o-*
 *.patch
-.dash
+.gincoin
 *.a
 *.pb.cc
 *.pb.h

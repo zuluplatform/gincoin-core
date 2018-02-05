@@ -54,8 +54,8 @@ static int AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = _("Gincoin Core gincoin-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  gincoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded dash transaction") + "\n" +
-              "  gincoin-tx [options] -create [commands]   " + _("Create hex-encoded dash transaction") + "\n" +
+              "  gincoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded gincoin transaction") + "\n" +
+              "  gincoin-tx [options] -create [commands]   " + _("Create hex-encoded gincoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

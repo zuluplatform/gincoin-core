@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "dashcore" user
+All three Linux startup configurations assume the existence of a "gincoincore" user
 and group.  They must be created before attempting to use these scripts.
 The OS X configuration assumes gincoind will be set up for the current user.
 
@@ -54,15 +54,15 @@ see `contrib/debian/examples/gincoin.conf`.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/gincoind`
-Configuration file:  `/etc/dashcore/gincoin.conf`
+Configuration file:  `/etc/gincoincore/gincoin.conf`
 Data directory:      `/var/lib/gincoind`
 PID file:            `/var/run/gincoind/gincoind.pid` (OpenRC and Upstart) or `/var/lib/gincoind/gincoind.pid` (systemd)
 Lock file:           `/var/lock/subsys/gincoind` (CentOS)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the dashcore user and group.  It is advised for security
+should all be owned by the gincoincore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-dashcore user and group.  Access to gincoin-cli and other gincoind rpc clients
+gincoincore user and group.  Access to gincoin-cli and other gincoind rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X
@@ -109,14 +109,14 @@ setting the GINCOIND and FLAGS environment variables in the file
 
 4e) Mac OS X
 
-Copy org.dash.gincoind.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.dash.gincoind.plist`.
+Copy org.gincoin.gincoind.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.gincoin.gincoind.plist`.
 
 This Launch Agent will cause gincoind to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run gincoind as the current user.
-You will need to modify org.dash.gincoind.plist if you intend to use it as a
-Launch Daemon with a dedicated dashcore user.
+You will need to modify org.gincoin.gincoind.plist if you intend to use it as a
+Launch Daemon with a dedicated gincoincore user.
 
 5. Auto-respawn
 -----------------------------------

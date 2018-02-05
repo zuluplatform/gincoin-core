@@ -4,7 +4,7 @@ NOTE : 12.1 -- REWRITE
 Masternode Budget API
 =======================
 
-Dash now supports full decentralized budgets that are paid directly from the blockchain via superblocks once per month.
+Gincoin now supports full decentralized budgets that are paid directly from the blockchain via superblocks once per month.
 
 Budgets go through a series of stages before being paid:
  * prepare - create a special transaction that destroys coins in order to make a proposal
@@ -23,7 +23,7 @@ In this transaction we prepare collateral for "_cool-project_". This proposal wi
 
 **Warning: if you change any fields within this command, the collateral transaction will become invalid.**
 
-Format: ```mngovernance prepare proposal-name url payment-count block-start dash-address monthly-payment-dash```
+Format: ```mngovernance prepare proposal-name url payment-count block-start gincoin-address monthly-payment-gincoin```
 
 Example: ```mngovernance prepare cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200 true```
 
@@ -36,7 +36,7 @@ This is the collateral hash, copy this output for the next step.
 
 Now we can submit our proposal to the network.
 
-Format: ```mngovernance submit proposal-name url payment-count block-start dash-address monthly-payment-dash fee-tx```
+Format: ```mngovernance submit proposal-name url payment-count block-start gincoin-address monthly-payment-gincoin fee-tx```
 
 Example: ```mngovernance submit cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200 464a0eb70ea91c94295214df48c47baa72b3876cfb658744aaf863c7b5bf1ff0```
 

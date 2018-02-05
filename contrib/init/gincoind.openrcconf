@@ -1,7 +1,7 @@
 # /etc/conf.d/gincoind: config file for /etc/init.d/gincoind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/dashcore/gincoin.conf"
+#BITCOIND_CONFIGFILE="/etc/gincoincore/gincoin.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/gincoind"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/gincoind"
 
 # User and group to own gincoind process
-#BITCOIND_USER="dashcore"
-#BITCOIND_GROUP="dashcore"
+#BITCOIND_USER="gincoincore"
+#BITCOIND_GROUP="gincoincore"
 
 # Path to gincoind executable
 #BITCOIND_BIN="/usr/bin/gincoind"
