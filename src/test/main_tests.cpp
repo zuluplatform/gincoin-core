@@ -19,7 +19,7 @@ static void TestBlockSubsidyHalvings(const Consensus::Params& consensusParams)
 {
     // tested in dash_tests.cpp
     //int maxHalvings = 64;
-    //CAmount nInitialSubsidy = 50 * COIN;
+    //CAmount nInitialSubsidy = 20 * COIN;
 
     //CAmount nPreviousSubsidy = nInitialSubsidy * 2; // for height == 0
     //BOOST_CHECK_EQUAL(nPreviousSubsidy, nInitialSubsidy * 2);

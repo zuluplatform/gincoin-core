@@ -73,16 +73,16 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 210240; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
-        consensus.nMasternodePaymentsStartBlock = 100000; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-        consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value
-        consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value
+        consensus.nSubsidyHalvingInterval = 262800; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
+        consensus.nMasternodePaymentsStartBlock = 200; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
+        consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value - not used
+        consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value - not used
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 328008; // actual historical value
+        consensus.nBudgetPaymentsStartBlock = 9999999999; // not used
         consensus.nBudgetPaymentsCycleBlocks = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nBudgetProposalEstablishingTime = 60*60*24;
-        consensus.nSuperblockStartBlock = 614820; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
+        consensus.nSuperblockStartBlock = 9999999999; //not used
         consensus.nSuperblockCycle = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
@@ -121,7 +121,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000100a308553b4863b755"); // 782700
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x000000000000001c172f518793c3b9e83f202284615592f87fe3506ce964dcd4"); // 782700
+        consensus.defaultAssumeValid = uint256S("0x00");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -138,7 +138,7 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1517097600, 1759089, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517097600, 1759089, 0x1e0ffff0, 1, 20 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x0000084223b242e149d33fe25d367fe7325dca406ec2629d7e5e0bb6c5ba0940"));
@@ -193,16 +193,16 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 210240;
-        consensus.nMasternodePaymentsStartBlock = 4010; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-        consensus.nMasternodePaymentsIncreaseBlock = 4030;
-        consensus.nMasternodePaymentsIncreasePeriod = 10;
+        consensus.nSubsidyHalvingInterval = 262800;
+        consensus.nMasternodePaymentsStartBlock = 200; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
+        consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value - not used
+        consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value - not used
         consensus.nInstantSendKeepLock = 6;
-        consensus.nBudgetPaymentsStartBlock = 4100;
+        consensus.nBudgetPaymentsStartBlock = 9999999999; // not used
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
         consensus.nBudgetProposalEstablishingTime = 60*20;
-        consensus.nSuperblockStartBlock = 4200; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
+        consensus.nSuperblockStartBlock = 9999999999; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
         consensus.nSuperblockCycle = 24; // Superblocks can be issued hourly on testnet
         consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 500;
@@ -241,7 +241,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000924e924a21715"); // 37900
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000004f5aef732d572ff514af99a995702c92e4452c7af10858231668b1f"); // 37900
+        consensus.defaultAssumeValid = uint256S("0x00"); // 37900
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
@@ -253,7 +253,7 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517742262, 2795076, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517742262, 2795076, 0x1e0ffff0, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000002c7c3ac4c211e92e5f44408005a3e93469b539395ba8b461f482f6f80dc"));
         assert(genesis.hashMerkleRoot == uint256S("0x081e76f6128b175dfa80421005a81c1a6fc05f1b2ec29ea7f30815a919d92ce0"));
@@ -363,7 +363,7 @@ public:
         nDefaultPort = 19111;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517743982, 4, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517743982, 4, 0x207fffff, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x260d92b607db4f01f8f7b5ee9db89f4b773c5d8ffbb3231488666d0b9ad490cb"));
         assert(genesis.hashMerkleRoot == uint256S("0x081e76f6128b175dfa80421005a81c1a6fc05f1b2ec29ea7f30815a919d92ce0"));
