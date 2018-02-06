@@ -1233,7 +1233,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 {
     CAmount nSubsidy = 20 * COIN;
 
-    if (nPrevHeight == 1) {
+    if (nPrevHeight == 0) {
         nSubsidy = 420480 * COIN; //premine
     }
 

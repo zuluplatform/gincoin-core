@@ -13,7 +13,7 @@ sudo ufw allow ssh/tcp
 sudo ufw limit ssh/tcp
 sudo ufw allow 10111/tcp
 sudo ufw logging on
-sudo ufw enable
+sudo ufw enable -y
 
 #ban
 sudo apt -y install fail2ban
