@@ -1234,7 +1234,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     CAmount nSubsidy = 20 * COIN;
 
     if (nPrevHeight == 1) {
-        nSubsidy = 420480; //premine
+        nSubsidy = 420480 * COIN; //premine
     }
 
     // yearly decline of production by 50% per year, projected ~10M coins max by year 2040+.
