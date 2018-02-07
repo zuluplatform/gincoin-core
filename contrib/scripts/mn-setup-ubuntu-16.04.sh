@@ -1,7 +1,6 @@
 #!/bin/bash
-chmod +x autogen.sh
 sudo apt-get update
-sudo apt-get install -y build-essential autoconf libtool libboost-all-dev libevent-dev libssl-doc zlib1g-dev
+sudo apt-get install -y build-essential autoconf libtool libboost-all-dev libevent-dev libssl-doc zlib1g-dev pkg-config libssl-dev
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update
 sudo apt-get install -y libdb4.8-dev libdb4.8++-dev libzmq3-dev
@@ -19,3 +18,9 @@ sudo ufw enable -y
 sudo apt -y install fail2ban
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
+
+#compile
+chmod +x autogen.sh
+autogen.sh
+export PKG_CONFIG=/usr/bin/pkg-config
+configure && make -j$(nproc --all)
