@@ -135,3 +135,4 @@ make
 .idea
 cmake-build-debug
 config.cache
+tmp

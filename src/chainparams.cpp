@@ -78,24 +78,27 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value - not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value - not used
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 9999999999; // not used
+        consensus.nBudgetPaymentsStartBlock = 999999999; // not used
         consensus.nBudgetPaymentsCycleBlocks = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nBudgetProposalEstablishingTime = 60*60*24;
-        consensus.nSuperblockStartBlock = 9999999999; //not used
+        consensus.nSuperblockStartBlock = 999999999; //not used
         consensus.nSuperblockCycle = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
-        consensus.nGovernanceMinQuorum = 10;
+        //consensus.nGovernanceMinQuorum = 10;
+        consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
-        consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x000007d91d1254d60e2dd1ae580383070a4ddffa4c64c2eeb4a2f9ecc0414343");
+        //consensus.BIP34Height = 0;
+        //consensus.BIP34Hash = uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a");
+        consensus.BIP34Height = -1;
+        consensus.BIP34Hash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
-        consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200;
         consensus.nPowDGWHeight = 34140;
@@ -118,7 +121,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000100a308553b4863b755"); // 782700
+        //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000100a308553b4863b755"); // 782700
+        consensus.nMinimumChainWork = uint256S("0x00"); // 782700
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
@@ -144,8 +148,10 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a"));
         assert(genesis.hashMerkleRoot == uint256S("0x2b795e354f727f67af8d09760590cfe15905bf64311d512dcd0ba88ce550e1b8"));
 
-        vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "s2.gincoin.io"));
+        vFixedSeeds.clear();
+        vSeeds.clear();
+        //vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
+        //vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "s2.gincoin.io"));
 
         // Gincoin addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -164,19 +170,19 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fDefaultConsistencyChecks = false;
-        fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fDefaultConsistencyChecks = true;
+        fRequireStandard = false;
+        fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = false;
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
-        strSporkPubKey = "04549ac134f694c0243f503e8c8a9a986f5de6610049c40b07816809b0d1d06a21b07be27b9bb555931773f62ba6cf35a25fd52f694d4e1106ccd237a7bb899fdd";
+        strSporkPubKey = "042b48adece7919b622ecbb79b8c54d2f042bd25f4e944debb18b60b749a04727f36c48205c5732b8b0a703aabb1830422ee244bc96c7bdafe86f1c32fcd97c356";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                    (  0, uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a")),
-            1517097600, // * UNIX timestamp of last checkpoint block
+                    (  0, uint256S("0x")),
+            0, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
             //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
@@ -197,11 +203,11 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value - not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value - not used
         consensus.nInstantSendKeepLock = 6;
-        consensus.nBudgetPaymentsStartBlock = 9999999999; // not used
+        consensus.nBudgetPaymentsStartBlock = 99999999; // not used
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
         consensus.nBudgetProposalEstablishingTime = 60*20;
-        consensus.nSuperblockStartBlock = 9999999999; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
+        consensus.nSuperblockStartBlock = 99999999; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
         consensus.nSuperblockCycle = 24; // Superblocks can be issued hourly on testnet
         consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 500;
@@ -209,8 +215,8 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 51;
         consensus.nMajorityRejectBlockOutdated = 75;
         consensus.nMajorityWindow = 100;
-        consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x0000047d24635e347be3aaaeb66c26be94901a2f962feccd4f95090191f208c1");
+        consensus.BIP34Height = 0;
+        consensus.BIP34Hash = uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
@@ -240,7 +246,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000924e924a21715"); // 37900
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00"); // 37900
+        consensus.defaultAssumeValid = uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b"); // 37900
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
@@ -260,8 +266,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("gincoin.io", "test-s1.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "test-s2.gincoin.io"));
+        //vSeeds.push_back(CDNSSeedData("gincoin.io", "test-s1.gincoin.io"));
+        //vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "test-s2.gincoin.io"));
 
         // Testnet Gincoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
@@ -287,13 +293,13 @@ public:
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
-        strSporkPubKey = "046f78dcf911fbd61910136f7f0f8d90578f68d0b3ac973b5040fb7afb501b5939f39b108b0569dca71488f5bbf498d92e4d1194f6f941307ffd95f75e76869f0e";
+        strSporkPubKey = "04646afcac0a7c8558a3d941bcf93422109972c17e836c4791884bbc44cd6ed2318885dc5398a8123c6a9d35294b45a51c46f1fb8a69f7b13ed3a2d82dd7fd3fe4";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                    (  0, uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b")),
+                    (  0, consensus.hashGenesisBlock),
 
-            1517097600, // * UNIX timestamp of last checkpoint block
+            1517932461, // * UNIX timestamp of last checkpoint block
             0,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500         // * estimated number of transactions per day after checkpoint
