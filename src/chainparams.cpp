@@ -91,14 +91,14 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
-        //consensus.BIP34Height = 0;
-        //consensus.BIP34Hash = uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a");
-        consensus.BIP34Height = -1;
-        consensus.BIP34Hash = uint256S("0x00");
+        consensus.BIP34Height = 0;
+        consensus.BIP34Hash = uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a");
+        //consensus.BIP34Height = -1;
+        //consensus.BIP34Hash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
-        consensus.fPowAllowMinDifficultyBlocks = true;
+        consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200;
         consensus.nPowDGWHeight = 34140;
@@ -121,11 +121,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000100a308553b4863b755"); // 782700
-        consensus.nMinimumChainWork = uint256S("0x00"); // 782700
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000110006b"); // 782700
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.defaultAssumeValid = uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -148,10 +147,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a"));
         assert(genesis.hashMerkleRoot == uint256S("0x2b795e354f727f67af8d09760590cfe15905bf64311d512dcd0ba88ce550e1b8"));
 
-        vFixedSeeds.clear();
-        vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
-        //vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "s2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "s2.gincoin.io"));
 
         // Gincoin addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -170,9 +167,9 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fDefaultConsistencyChecks = true;
-        fRequireStandard = false;
-        fMineBlocksOnDemand = true;
+        fDefaultConsistencyChecks = false;
+        fRequireStandard = true;
+        fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = false;
 
         nPoolMaxTransactions = 3;
@@ -181,8 +178,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                    (  0, uint256S("0x")),
-            0, // * UNIX timestamp of last checkpoint block
+                    (  0, consensus.hashGenesisBlock),
+            1517931377, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
             //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
