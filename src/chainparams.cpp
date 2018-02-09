@@ -221,7 +221,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 75;
         consensus.nMajorityWindow = 100;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b");
+        consensus.BIP34Hash = uint256S("0x0000070936337da4fa971d46112401d17a7288b57bde0e45fba010b94b2577a9");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
