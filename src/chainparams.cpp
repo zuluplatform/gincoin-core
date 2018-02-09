@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "The Guardian 06-Jan-2018 Julian Assange still faces arrest after judge rules warrant valid";
+    const char* pszTimestamp = "The Guardian 09-Jan-2018 US vice-president skips Olympics dinner in snub to North Korea officials";
     const CScript genesisOutputScript = CScript() << ParseHex("044f1443283e594f9a087e02aeceef6c2cac0d651f65c82cea13b929240a73f380e708f5922225ae4551749a7db28c742758f44877fd4ba527789481f3733d61b1") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -121,10 +121,11 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000110006b"); // 782700
+        //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000110006b");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a");
+        consensus.defaultAssumeValid = uint256S("0x00000358919618702b62580b69a3bf1788d60b9bddb403dad029441341bff7e3");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -141,21 +142,22 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1517931377, 361859, 0x1e0ffff0, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1518185669, 82580, 0x1e0ffff0, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x000005e821b90a07f8eac7c26ffaf30746c284082d3e5dae8004f4cdfce1825a"));
-        assert(genesis.hashMerkleRoot == uint256S("0x2b795e354f727f67af8d09760590cfe15905bf64311d512dcd0ba88ce550e1b8"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000358919618702b62580b69a3bf1788d60b9bddb403dad029441341bff7e3"));
+        assert(genesis.hashMerkleRoot == uint256S("0x14590a13373ba0f63945cb749ae44c31dc6718bd16a210adf42493d7c4dfbbd9"));
 
         vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "s2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("gincoin.io", "s2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("gincoin.io", "s3.gincoin.io"));
 
-        // Gincoin addresses start with 'X'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
-        // Gincoin script addresses start with '7'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
-        // Gincoin private keys start with '7' or 'X'
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
+        // Gincoin addresses start with 'G'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
+        // Gincoin script addresses start with '5'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
+        // Gincoin private keys start with '5' or 'G'
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,198);
         // Gincoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         // Gincoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
@@ -179,7 +181,7 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
                     (  0, consensus.hashGenesisBlock),
-            1517931377, // * UNIX timestamp of last checkpoint block
+            1518185669, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
             //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
@@ -240,10 +242,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 50; // 50% of 100
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000924e924a21715"); // 37900
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b"); // 37900
+        consensus.defaultAssumeValid = uint256S("0x000000332c71d495d26f3759da83ac3ef97e60e03b78adc7342df0a1e777ee52"); // 37900
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
@@ -255,16 +257,16 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517932461, 3348249, 0x1e0ffff0, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1518186197, 841961, 0x1e0ffff0, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x000001a7c2d3511c82b3f7a05c6a9a91721907c843e597815d6d27ad00a93b8b"));
-        assert(genesis.hashMerkleRoot == uint256S("0x2b795e354f727f67af8d09760590cfe15905bf64311d512dcd0ba88ce550e1b8"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000332c71d495d26f3759da83ac3ef97e60e03b78adc7342df0a1e777ee52"));
+        assert(genesis.hashMerkleRoot == uint256S("0x14590a13373ba0f63945cb749ae44c31dc6718bd16a210adf42493d7c4dfbbd9"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("gincoin.io", "test-s1.gincoin.io"));
-        //vSeeds.push_back(CDNSSeedData("mn.gincoin.io", "test-s2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("test.gincoin.io", "test-s1.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("test.gincoin.io", "test-s2.gincoin.io"));
 
         // Testnet Gincoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
@@ -366,11 +368,11 @@ public:
         nDefaultPort = 19111;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517932461, 0, 0x207fffff, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1518186197, 1, 0x207fffff, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         
-        assert(consensus.hashGenesisBlock == uint256S("0x630588c11881fe676413d6f00d7f767f44418681753753b97b0f19125091a818"));
-        assert(genesis.hashMerkleRoot == uint256S("0x2b795e354f727f67af8d09760590cfe15905bf64311d512dcd0ba88ce550e1b8"));
+        assert(consensus.hashGenesisBlock == uint256S("0x6fa54aae4a926cf4bb7dcd659c2aa11add8e76ef00835854474df0932d78e5da"));
+        assert(genesis.hashMerkleRoot == uint256S("0x14590a13373ba0f63945cb749ae44c31dc6718bd16a210adf42493d7c4dfbbd9"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.

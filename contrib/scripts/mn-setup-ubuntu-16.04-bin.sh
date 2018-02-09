@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update
-sudo apt-get install -y htop build-essential autoconf libtool libboost-all-dev libevent-dev libssl-doc zlib1g-dev pkg-config libssl-dev libdb4.8-dev libdb4.8++-dev libzmq3-dev
+sudo apt-get install -y htop libboost-all-dev libzmq3-dev libdb4.8-dev libdb4.8++-dev libevent-dev libssl-doc zlib1g-dev
 
 #setup firewall
 sudo ufw default allow outgoing
@@ -16,9 +16,3 @@ sudo ufw --force enable
 sudo apt -y install fail2ban
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
-
-#compile
-chmod +x autogen.sh
-autogen.sh
-export PKG_CONFIG=/usr/bin/pkg-config
-configure && make -j$(nproc --all)
