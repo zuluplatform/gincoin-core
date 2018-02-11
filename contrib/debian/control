@@ -26,7 +26,7 @@ Build-Depends: debhelper,
 Standards-Version: 3.9.2
 Homepage: https://gincoin.io/
 Vcs-Git: git://github.com/gincoin/gincoin-core.git
-Vcs-Browser: https://github.com/gincoin/gincoin-core
+Vcs-Browser: https://github.com/gincoin-dev/gincoin-core
 
 Package: gincoind
 Architecture: any

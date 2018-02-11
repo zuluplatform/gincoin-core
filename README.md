@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/gincoin/gincoin-core/tags) are created to indicate new official,
+[Tags](https://github.com/gincoin-dev/gincoin-core/tags) are created to indicate new official,
 stable release versions of Gincoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
