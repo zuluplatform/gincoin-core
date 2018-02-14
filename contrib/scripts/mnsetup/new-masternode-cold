@@ -3,6 +3,7 @@ NODE=$1
 SPORE="node.sporestack.com"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BINDIR="gincoin-binaries"
+BINURL="https://gincoin.io/gincoin-binaries.tar.gz"
 MN_CONFIRMATIONS=15
 
 timeout() {
@@ -34,15 +35,6 @@ echo -n "3. Press [ENTER] to continue..."
 read tmp
 hr
 
-if [[ ! -f $DIR/$BINDIR/gincoind ]]; then
-    if [[ ! -f $DIR/../../../src/gincoind ]]; then
-        echo "Make sure you have previously built from source code, no 'gincoind' found in src/"
-    fi
-
-    cp $DIR/../../../src/gincoind $DIR/$BINDIR/gincoind
-    cp $DIR/../../../src/gincoin-cli $DIR/$BINDIR/gincoin-cli
-fi
-
 if [[ ! $NODE ]]; then
     echo "Building new server..."
     exec 5>&1
@@ -52,6 +44,16 @@ if [[ ! $NODE ]]; then
     hr
     sleep 5
 fi
+
+trap ctrl_c INT
+
+function ctrl_c() {
+    echo "** Resume process at anytime with the following command"
+    hr
+    echo "./new-masternode-cold $NODE"
+    hr
+    exit
+}
 
 CONN="sporestack ssh $NODE --command "
 CONN_DIRECT="ssh -o StrictHostKeyChecking=no root@$NODE.$SPORE -C "
@@ -95,10 +97,8 @@ if [[ ! $($CONN "ls -la | grep $BINDIR" 2>&1) = *"$BINDIR"* ]]; then
     hr
     echo "Loading files..."
     hr
-    cd $DIR
-    tar -czf - $BINDIR | $CONN 'tar -xzvf - -C .' || exit 1
-    cd -
-    $CONN "mkdir -p .gincoincore && mv $BINDIR/gincoin.conf .gincoincore/" || exit 1
+
+    $CONN "curl $BINURL --output $BINDIR.tar.gz && tar -zxvf $BINDIR.tar.gz && mkdir -p .gincoincore && mv $BINDIR/gincoin.conf .gincoincore/ && rm $BINDIR.tar.gz" || exit 1
 fi
 
 IP=$($CONN 'dig +short myip.opendns.com @resolver1.opendns.com') || exit 1
