@@ -1,6 +1,7 @@
 #!/bin/bash
 NODE=$1
 SPORE="node.sporestack.com"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BINDIR="gincoin-binaries"
 MN_CONFIRMATIONS=15
 
@@ -30,8 +31,17 @@ fi
 echo "1. Make sure you have about \$1 worth of BCH available to spend in a wallet of your choosing"
 echo "2. Open Gincoin QT (further referred to as WALLET) and wait for it to sync"
 echo -n "3. Press [ENTER] to continue..."
-hr
 read tmp
+hr
+
+if [[ ! -f $DIR/$BINDIR/gincoind ]]; then
+    if [[ ! -f $DIR/../../../src/gincoind ]]; then
+        echo "Make sure you have previously built from source code, no 'gincoind' found in src/"
+    fi
+
+    cp $DIR/../../../src/gincoind $DIR/$BINDIR/gincoind
+    cp $DIR/../../../src/gincoin-cli $DIR/$BINDIR/gincoin-cli
+fi
 
 if [[ ! $NODE ]]; then
     echo "Building new server..."
@@ -85,7 +95,9 @@ if [[ ! $($CONN "ls -la | grep $BINDIR" 2>&1) = *"$BINDIR"* ]]; then
     hr
     echo "Loading files..."
     hr
+    cd $DIR
     tar -czf - $BINDIR | $CONN 'tar -xzvf - -C .' || exit 1
+    cd -
     $CONN "mkdir -p .gincoincore && mv $BINDIR/gincoin.conf .gincoincore/" || exit 1
 fi
 
