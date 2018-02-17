@@ -92,9 +92,9 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
     
     /* Theme selector */
-    //ui->theme->addItem(QString("GIN-light"), QVariant("light"));
+    ui->theme->addItem(QString("GIN-light"), QVariant("light"));
     //ui->theme->addItem(QString("GIN-light-hires"), QVariant("light-hires"));
-    ui->theme->addItem(QString("GIN-blue"), QVariant("drkblue"));
+    //ui->theme->addItem(QString("GIN-blue"), QVariant("drkblue"));
     //ui->theme->addItem(QString("GIN-Crownium"), QVariant("crownium"));
     //ui->theme->addItem(QString("GIN-traditional"), QVariant("trad"));
     
