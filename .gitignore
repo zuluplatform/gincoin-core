@@ -116,6 +116,9 @@ cache/
 share/BitcoindComparisonTool.jar
 
 !src/leveldb*/Makefile
+!src/qt/test/Makefile
+!src/test/Makefile
+!depends/Makefile
 
 .cproject
 .project
