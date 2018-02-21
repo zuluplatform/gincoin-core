@@ -50,7 +50,7 @@ trap ctrl_c INT
 function ctrl_c() {
     echo "** Resume process at anytime with the following command"
     hr
-    echo "./new-masternode-cold $NODE"
+    echo "./$(basename "$0") $NODE"
     hr
     exit
 }
