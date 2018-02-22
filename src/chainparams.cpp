@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "The Guardian 09-Jan-2018 US vice-president skips Olympics dinner...";
+    const char* pszTimestamp = "The Guardian 22-Feb-2018 NRA head breaks silence to attack gun...";
     const CScript genesisOutputScript = CScript() << ParseHex("044f1443283e594f9a087e02aeceef6c2cac0d651f65c82cea13b929240a73f380e708f5922225ae4551749a7db28c742758f44877fd4ba527789481f3733d61b1") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -92,14 +92,14 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x00000f5afa86683958964308cf77a054c603020a819d842ecc135e639bf434e5");
+        consensus.BIP34Hash = uint256S("0x00000cd6bde619b2c3b23ad2e384328a450a37fa28731debf748c3b17f91f97d");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
-        consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
-        consensus.nPowKGWHeight = 15200;
-        consensus.nPowDGWHeight = 34140;
+        consensus.nPowKGWHeight = 15200; //not used
+        consensus.nPowDGWHeight = 200;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -119,10 +119,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000001c00193");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000bd02408d32ed0fd8fa2e4483b3f233e9e400eff63b428da80e1661d62f8");
+        consensus.defaultAssumeValid = uint256S("0x00");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -139,15 +139,17 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1518185669, 1270537, 0x1e0ffff0, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1519335052, 13140, 0x1e0ffff0, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x00000f5afa86683958964308cf77a054c603020a819d842ecc135e639bf434e5"));
-        assert(genesis.hashMerkleRoot == uint256S("0x85fd4edcc489e573da51cd2e28666ef3382b579cfa449e7a98a0bfeebeec31e2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000cd6bde619b2c3b23ad2e384328a450a37fa28731debf748c3b17f91f97d"));
+        assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));
 
-        vSeeds.push_back(CDNSSeedData("gincoin.io", "s1.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("s2.gincoin.io", "s2.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("s3.gincoin.io", "s3.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("gincoin.io", "seed1.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("seed2.gincoin.io", "seed2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("seed3.gincoin.io", "seed3.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("seed4.gincoin.io", "seed4.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("seed5.gincoin.io", "seed5.gincoin.io"));
 
         // Gincoin addresses start with 'G'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
@@ -166,9 +168,9 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fDefaultConsistencyChecks = false;
-        fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fDefaultConsistencyChecks = true;
+        fRequireStandard = false;
+        fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = false;
 
         nPoolMaxTransactions = 3;
@@ -177,11 +179,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                    (  0, consensus.hashGenesisBlock)
-                    (  10, uint256S("0x00000bd02408d32ed0fd8fa2e4483b3f233e9e400eff63b428da80e1661d62f8"))
-                    (  100, uint256S("0x00000c159cb615bfad05eabea2b508d2df33a62bd31f487b9600b2077e17afa8"))
-                    (  2500, uint256S("0x00000b3233b68c02f2156ee306ff05d8789c52afa6fd5ce7b10ba9e4ab3d0734")),
-            1518886798, // * UNIX timestamp of last checkpoint block
+                    (  0, consensus.hashGenesisBlock),
+            1519335052, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
             //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
@@ -257,11 +256,11 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1518186197, 342260, 0x1e0ffff0, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1519336394, 1105519, 0x1e0ffff0, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x0000070936337da4fa971d46112401d17a7288b57bde0e45fba010b94b2577a9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x85fd4edcc489e573da51cd2e28666ef3382b579cfa449e7a98a0bfeebeec31e2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000ac0100fe889e7130e47d13819cc91eba5646dc1e8fc050c7a67532565ed"));
+        assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -298,7 +297,7 @@ public:
             boost::assign::map_list_of
                     (  0, consensus.hashGenesisBlock),
 
-            1518186197, // * UNIX timestamp of last checkpoint block
+            1519336394, // * UNIX timestamp of last checkpoint block
             0,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500         // * estimated number of transactions per day after checkpoint
@@ -340,7 +339,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nPowKGWHeight = 15200; // same as mainnet
-        consensus.nPowDGWHeight = 34140; // same as mainnet
+        consensus.nPowDGWHeight = 200; // same as mainnet
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
         consensus.nMinerConfirmationWindow = 144; // Faster than normal for regtest (144 instead of 2016)
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -368,11 +367,11 @@ public:
         nDefaultPort = 19111;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1518186197, 0, 0x207fffff, 1, 20 * COIN);
+        genesis = CreateGenesisBlock(1519336473, 0, 0x207fffff, 1, 20 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         
-        assert(consensus.hashGenesisBlock == uint256S("0x49092fd33f01a4712cc8c9a6f0cbbfe3e1574e4a494d4a740232f8b670f19a9b"));
-        assert(genesis.hashMerkleRoot == uint256S("0x85fd4edcc489e573da51cd2e28666ef3382b579cfa449e7a98a0bfeebeec31e2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x5f8058aea61edae50983271d61c69161ca1ee90a556127aba1b18f414e3293b7"));
+        assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
