@@ -95,7 +95,7 @@ public:
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
-        consensus.fPowAllowMinDifficultyBlocks = true;
+        consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200; //not used
         consensus.nPowDGWHeight = 200;
