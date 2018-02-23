@@ -3,7 +3,7 @@ NODE=$1
 SPORE="node.sporestack.com"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BINDIR="gincoin-binaries"
-BINURL="https://gincoin.io/gincoin-binaries.tar.gz"
+BINURL="https://gincoin.io/gin-bin.tar.gz"
 MN_CONFIRMATIONS=15
 
 timeout() {
@@ -111,7 +111,7 @@ if [[ ! -z $($CONN "cat .gincoincore/gincoin.conf | grep {IP}") ]]; then
     $CONN "echo \"Setting public IP: $IP\" && sed -i -e \"s/{IP}/$IP/g\" .gincoincore/gincoin.conf" || exit 1
 fi
 
-if [[ ! -z $($CONN "cat .gincoincore/gincoin.conf | grep {MPK}") ]]; then
+if [[ ! -z $($CONN "cat $CONFDIR/$COIN.conf | grep masternodeprivkey") ]]; then
     hr
     echo "Configuring masternode private key..."
     hr
@@ -119,7 +119,7 @@ if [[ ! -z $($CONN "cat .gincoincore/gincoin.conf | grep {MPK}") ]]; then
     echo -n "[WALLET] Open gincoin-qt's debug console and type 'masternode genkey' (paste output here): "
     read PRIVKEY || exit 1
     PRIVKEY=$(echo $PRIVKEY | xargs)
-    $CONN "echo \"Setting MN private key: $PRIVKEY\" && sed -i -e \"s/{MPK}/$PRIVKEY/g\" .gincoincore/gincoin.conf" || exit 1
+    $CONN "echo \"Setting MN private key: $PRIVKEY\" && echo \"masternode=1\" >> .gincoincore/gincoin.conf && echo \"masternodeprivkey=$PRIVKEY\" >> .gincoincore/gincoin.conf" || exit 1
 else
     PRIVKEY=$($CONN "cat .gincoincore/gincoin.conf | grep masternodeprivkey | sed -e "s/masternodeprivkey=//"")
 fi
@@ -169,7 +169,7 @@ CONFIRMATIONS=$($CONN "$BINDIR/gincoin-cli getrawtransaction $TX_ID 1 | jq \".co
 
 while [ "$CONFIRMATIONS" -lt "$MN_CONFIRMATIONS" ]; do
     echo -ne "  ($CONFIRMATIONS/$MN_CONFIRMATIONS)...\r"
-    sleep 30
+    sleep 5
     CONFIRMATIONS=$($CONN "$BINDIR/gincoin-cli getrawtransaction $TX_ID 1 | jq \".confirmations\"")
 done
 echo -ne '\n'
