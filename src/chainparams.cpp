@@ -95,7 +95,7 @@ public:
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
-        consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200; //not used
         consensus.nPowDGWHeight = 200;
@@ -118,10 +118,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000b00065");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000fb99d0da5e2e0aa3ad9e22106e17ef44bf0074121dbf0ef241bd85378d7");
+        consensus.defaultAssumeValid = uint256S("0x00");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -167,9 +167,9 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fDefaultConsistencyChecks = false;
-        fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fDefaultConsistencyChecks = true;
+        fRequireStandard = false;
+        fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = false;
 
         nPoolMaxTransactions = 3;
@@ -179,7 +179,6 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
                     (  0, consensus.hashGenesisBlock)
-                    ( 10, uint256S("0x00000fb99d0da5e2e0aa3ad9e22106e17ef44bf0074121dbf0ef241bd85378d7"))
             ,
             1519373901, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
