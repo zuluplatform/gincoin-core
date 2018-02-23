@@ -111,7 +111,8 @@ if [[ ! -z $($CONN "cat .gincoincore/gincoin.conf | grep {IP}") ]]; then
     $CONN "echo \"Setting public IP: $IP\" && sed -i -e \"s/{IP}/$IP/g\" .gincoincore/gincoin.conf" || exit 1
 fi
 
-if [[ ! -z $($CONN "cat .gincoincore/gincoin.conf | grep masternodeprivkey") ]]; then
+
+if [[ "$($CONN "cat .gincoincore/gincoin.conf | grep masternodeprivkey")" == "" ]]; then
     hr
     echo "Configuring masternode private key..."
     hr
