@@ -1,6 +1,7 @@
 #!/bin/bash
 NODE=$1
 SPORE="node.sporestack.com"
+DAYS=1
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BINDIR="gincoin-binaries"
 BINURL="https://gincoin.io/gin-bin.tar.gz"
@@ -38,7 +39,7 @@ hr
 if [[ ! $NODE ]]; then
     echo "Building new server..."
     exec 5>&1
-    OUTPUT=$(sporestack spawn --days 1 --osid 215 --dcid AUTO --flavor 201 | tee >(cat - >&5))
+    OUTPUT=$(sporestack spawn --days $DAYS --osid 215 --dcid AUTO --flavor 201 | tee >(cat - >&5))
     NODE="${OUTPUT##*$'\n'}"
     echo "In case you need to resume setup use $NODE as a the first parameter to this command"
     hr
