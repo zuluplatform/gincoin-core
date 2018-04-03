@@ -93,8 +93,8 @@ public:
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x00000cd6bde619b2c3b23ad2e384328a450a37fa28731debf748c3b17f91f97d");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day // used only for KGW and Bitcoin Diff
+        consensus.nPowTargetSpacing = 2 * 60; // Gincoin: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200; //not used
@@ -219,8 +219,8 @@ public:
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x0000070936337da4fa971d46112401d17a7288b57bde0e45fba010b94b2577a9");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day // used only for KGW and Bitcoin Diff
+        consensus.nPowTargetSpacing = 2 * 60; // Gincoin: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 4001; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
@@ -337,8 +337,8 @@ public:
         consensus.BIP34Height = -1; // BIP34 has not necessarily activated on regtest
         consensus.BIP34Hash = uint256();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Gincoin: 2.5 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // Gincoin: 1 day // used only for KGW and Bitcoin Diff
+        consensus.nPowTargetSpacing = 2 * 60; // Gincoin: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nPowKGWHeight = 15200; // same as mainnet
