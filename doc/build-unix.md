@@ -1,8 +1,16 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Gincoin Core in Unix.
 
-(for OpenBSD specific instructions, see [build-openbsd.md](build-openbsd.md))
+Docker container for new builds
+----------------------------------
+
+A docker image is provided for quick building of the binaries without installing dependencies. Provided that the folder "/tmp/build" exists you can run:
+
+```bash
+docker run --rm -v /tmp/build:/build gincoin/gincoin-core-build --disable-tests --without-gui
+```
+
+Once the build finishes the binaries will be available in /tmp/build.
 
 Note
 ---------------------
