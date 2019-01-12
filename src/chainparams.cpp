@@ -277,8 +277,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("test.gincoin.io", "test-s1.gincoin.io"));
-        vSeeds.push_back(CDNSSeedData("test.gincoin.io", "test-s2.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("testnet.gincoin.io", "seed1.testnet.gincoin.io"));
+        vSeeds.push_back(CDNSSeedData("testnet.gincoin.io", "seed2.testnet.gincoin.io"));
 
         // Testnet Gincoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
