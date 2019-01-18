@@ -1,5 +1,5 @@
 #!/bin/bash
-REPO="https://github.com/gincoin-dev/gincoin-core.git"
+REPO="https://github.com/GIN-coin/gincoin-core.git"
 SRC="/tmp/src"
 BUILD="/build"
 OPTIONS="$@"
