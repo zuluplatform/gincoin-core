@@ -120,6 +120,9 @@ public:
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 23750;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // DPoW
+        consensus.nDpowTimestamp = 2147483647; //max
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000047a222baa2d1fe");
@@ -258,6 +261,9 @@ public:
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 1;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // DPoW
+        consensus.nDpowTimestamp = 2147483647; //max
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
@@ -374,6 +380,9 @@ public:
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 1;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // DPoW
+        consensus.nDpowTimestamp = 2147483647; //max
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;

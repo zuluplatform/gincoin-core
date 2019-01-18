@@ -102,6 +102,7 @@ struct Params {
         }
     }
     uint32_t nLyra2zTimestamp;
+    uint32_t nDpowTimestamp;
 };
 } // namespace Consensus
 
