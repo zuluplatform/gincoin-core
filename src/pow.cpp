@@ -125,8 +125,6 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     if (bnNew > bnPowLimit) {
         bnNew = bnPowLimit;
     }
-    
-    LogPrintf("--- diff --- %d: %d\n", pindexLast->nHeight, bnNew.GetCompact());
 
     return bnNew.GetCompact();
 }
