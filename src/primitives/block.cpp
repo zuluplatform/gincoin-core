@@ -12,17 +12,40 @@
 #include "crypto/neoscrypt.h"
 #include "crypto/Lyra2Z/Lyra2Z.h"
 #include "consensus/consensus.h"
+#include "chainparams.h"
 
+#define TIME_MASK 0xffffff80
+
+// used for all blocks after genesis
 uint256 CBlockHeader::GetHash() const
 {
     uint256 thash;
     unsigned int profile = 0x0;
 
-    if (nTime <= LYRA2Z_TIMESTAMP) {
-        neoscrypt((unsigned char *) &nVersion, (unsigned char *) &thash, profile);
-    } else {
+    if (nTime > Params().GetConsensus().nX16rtTimestamp) {
+        //x16rt
+        int32_t nTimeX16r = nTime&TIME_MASK;
+        uint256 hashTime = Hash(BEGIN(nTimeX16r), END(nTimeX16r));
+        thash = HashX16R(BEGIN(nVersion), END(nNonce), hashTime);
+    } else if (nTime > LYRA2Z_TIMESTAMP) {
+        //lyra2z
         lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
+    } else {
+        //neoscrypt
+        neoscrypt((unsigned char *) &nVersion, (unsigned char *) &thash, profile);
     }
+
+    return thash;
+}
+
+// used for genesis generation only
+uint256 CBlockHeader::GetHash(const bool noConsensus) const
+{
+    uint256 thash;
+    unsigned int profile = 0x0;
+    
+    //neoscrypt
+    neoscrypt((unsigned char *) &nVersion, (unsigned char *) &thash, profile);
 
     return thash;
 }

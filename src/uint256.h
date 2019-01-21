@@ -129,7 +129,17 @@ class uint256 : public base_blob<256> {
 public:
     uint256() {}
     uint256(const base_blob<256>& b) : base_blob<256>(b) {}
+    explicit uint256(const char* psz) { SetHex(psz); }
+    explicit uint256(const std::string& strHex) { SetHex(strHex); }
     explicit uint256(const std::vector<unsigned char>& vch) : base_blob<256>(vch) {}
+    
+    int GetNibble(int index) const
+    {
+        index = 63 - index;
+        if (index % 2 == 1)
+            return(data[index / 2] >> 4);
+        return(data[index / 2] & 0x0F);
+    }
 
     /** A cheap hash function that just returns 64 bits from the result, it can be
      * used when the contents are considered uniformly random. It is not appropriate
