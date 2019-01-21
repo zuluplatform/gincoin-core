@@ -18,7 +18,7 @@
 // komodo_init();
 
 // in rpc/blockchain.cpp
-// #include komodo_rpcblockchain.h
+// #include "komodo_rpcblockchain.h"
 // ...
 // { "blockchain",         "calc_MoM",               &calc_MoM,             {"height", "MoMdepth"}  },
 // { "blockchain",         "height_MoM",             &height_MoM,             {"height"}  },

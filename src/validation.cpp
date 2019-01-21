@@ -1649,6 +1649,9 @@ static DisconnectResult DisconnectBlock(const CBlock& block, CValidationState& s
 
     bool fClean = true;
 
+    // prevent disconnecting notarized blocks
+    komodo_disconnect((CBlockIndex *)pindex,(CBlock *)&block);
+
     CBlockUndo blockUndo;
     CDiskBlockPos pos = pindex->GetUndoPos();
     if (pos.IsNull()) {
@@ -2242,6 +2245,8 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
 
     // add this block to the view's block chain
     view.SetBestBlock(pindex->GetBlockHash());
+
+    komodo_connectblock(pindex,*(CBlock *)&block);
 
     int64_t nTime5 = GetTimeMicros(); nTimeIndex += nTime5 - nTime4;
     LogPrint("bench", "    - Index writing: %.2fms [%.2fs]\n", 0.001 * (nTime5 - nTime4), nTimeIndex * 0.000001);
@@ -3191,6 +3196,8 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
 {
     const Consensus::Params& consensusParams = Params().GetConsensus();
     int nHeight = pindexPrev->nHeight + 1;
+    uint256 hash = block.GetHash();
+    int32_t notarized_height;
     // Check proof of work
     if(Params().NetworkIDString() == CBaseChainParams::MAIN && nHeight <= 68589){
         // architecture issues with DGW v1 and v2)
@@ -3226,6 +3233,17 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (block.nVersion < 4 && IsSuperMajority(4, pindexPrev, consensusParams.nMajorityRejectBlockOutdated, consensusParams))
         return state.Invalid(error("%s : rejected nVersion=3 block", __func__),
                              REJECT_OBSOLETE, "bad-version");
+
+    // Prevent re-organizing of notarized blocks
+    if ( komodo_checkpoint(&notarized_height,(int32_t)nHeight,hash) < 0 )
+    {
+        CBlockIndex *heightblock = chainActive[nHeight];
+        if ( heightblock != 0 && heightblock->GetBlockHash() == hash )
+        {
+            //fprintf(stderr,"got a pre notarization block that matches height.%d\n",(int32_t)nHeight);
+            return true;
+        } else return state.DoS(100, error("%s: forked chain %d older than last notarized (height %d) vs %d", __func__,nHeight, notarized_height));
+    }
 
     return true;
 }
