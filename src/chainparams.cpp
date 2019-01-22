@@ -122,13 +122,13 @@ public:
         consensus.nPowApr2018TargetSpacing = 2 * 60;
         
         // X16rt switch
-        consensus.nX16rtTimestamp = 999999999;
+        consensus.nX16rtTimestamp = 1549468800; //Feb 6, 2019 @ 4pm GMT
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000047a222baa2d1fe");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000331293c5e9f8112e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000000000a106c24554e369cdacdb683fd6daef276ca38b1991ad82e74dc63");
+        consensus.defaultAssumeValid = uint256S("0x0000000000015fe3dbdb0ed7d40bd4441bc1c775441ad14052770d9e8306e3a6");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -191,10 +191,11 @@ public:
                     ( 100, uint256S("0x000001d9726a3d9624b6bd53428b658204333461708f84a520570272c5d7f511"))
                     ( 1000, uint256S("0x00000000015079cff402ec1f9d88af43eba786f1a70bed49eca4c96b1786c074"))
                     ( 22092, uint256S("0x00000000000a106c24554e369cdacdb683fd6daef276ca38b1991ad82e74dc63"))
+                    ( 225000, uint256S("0x0000000000015fe3dbdb0ed7d40bd4441bc1c775441ad14052770d9e8306e3a6"))
             ,
-            1522841266, // * UNIX timestamp of last checkpoint block
-            28497,    // * total number of transactions between genesis and last checkpoint
-            //   (the tx=... number in the SetBestChain debug.log lines)
+            1548176715, // * UNIX timestamp of last checkpoint block
+            470784,     // * total number of transactions between genesis and last checkpoint
+                        //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
         };
     }
@@ -263,7 +264,7 @@ public:
         consensus.nPowApr2018TargetSpacing = 2 * 60;
         
         // X16rt switch
-        consensus.nX16rtTimestamp = 1548118800; //Jan 22nd, 2019, 1pm GMT
+        consensus.nX16rtTimestamp = 1548118800; //Jan 22nd, 2019, 1am GMT
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
