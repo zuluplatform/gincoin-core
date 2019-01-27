@@ -92,7 +92,7 @@ int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsi
     LOCK(cs_main);
     if ( KOMODO_TXINDEX != 0 )
     {
-        if ( GetTransaction(txid,tx,hashBlock,false) == 0 )
+        if ( GetTransaction(txid,tx,Params().GetConsensus(),hashBlock,false) == 0 )
         {
             LogPrint("dpow","ht.%d couldnt get txid.%s !\n",height,txid.GetHex().c_str());
             return(-1);
@@ -100,7 +100,7 @@ int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsi
     }
     else
     {
-        if ( GetTransaction(txid,tx,hashBlock,true) == 0 )
+        if ( GetTransaction(txid,tx,Params().GetConsensus(),hashBlock,true) == 0 )
         {
             LogPrint("dpow","ht.%d couldnt get txid.%s !\n",height,txid.GetHex().c_str());
             return(-1);
@@ -127,7 +127,7 @@ int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsi
 int32_t komodo_importaddress(std::string addr)
 {
     CBitcoinAddress address(addr);
-    CWallet * const pwallet = vpwallets[0];
+    CWallet * const pwallet = pwalletMain;
     if ( pwallet != 0 )
     {
         LOCK2(cs_main, pwallet->cs_wallet);
@@ -604,7 +604,7 @@ portable_mutex_t komodo_mutex;
 
 void komodo_importpubkeys()
 {
-    int32_t i,n,j,m,offset = 1,val,dispflag = 0; char *pubkey;
+    int32_t i,n,m,offset = 1,val,dispflag = 0; char *pubkey;
 
     n = (int32_t)(sizeof(Notaries_elected1)/sizeof(*Notaries_elected1));
 
