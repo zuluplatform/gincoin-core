@@ -56,6 +56,8 @@ using namespace std;
 # error "Gincoin Core cannot be compiled without assertions."
 #endif
 
+char ASSETCHAINS_SYMBOL[65] = { "GIN" };
+
 /**
  * Global state
  */

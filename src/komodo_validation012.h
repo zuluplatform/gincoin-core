@@ -57,6 +57,7 @@
 #include <chainparams.h>
 #include <base58.h>
 #include "komodo_notaries.h"
+#include "validation.h"
 
 #define SATOSHIDEN ((uint64_t)100000000L)
 #define dstr(x) ((double)(x) / SATOSHIDEN)
@@ -74,6 +75,8 @@
 
 // Is the current node a notary node?
 #define IS_NOTARY (NOTARY_PUBKEY33[0] != 0)
+
+extern char ASSETCHAINS_SYMBOL[65];
 
 union _bits256 { uint8_t bytes[32]; uint16_t ushorts[16]; uint32_t uints[8]; uint64_t ulongs[4]; uint64_t txid; };
 typedef union _bits256 bits256;
