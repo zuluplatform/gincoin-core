@@ -1115,7 +1115,7 @@ void komodo_connectblock(CBlockIndex *pindex,CBlock& block)
                 len = block.vtx[i].vout[j].scriptPubKey.size();
                 if ( len >= (int32_t)sizeof(uint32_t) && len <= (int32_t)sizeof(scriptbuf) )
                 {
-                    std::memcpy(scriptbuf,block.vtx[i].vout[j].scriptPubKey[0],len);
+                    std::memcpy(scriptbuf,(const void *)block.vtx[i].vout[j].scriptPubKey[0],len);
                     komodo_voutupdate(i,j,scriptbuf,len,height,&specialtx,&notarizedheight,(uint64_t)block.vtx[i].vout[j].nValue,notarized,signedmask);
                 }
             }
