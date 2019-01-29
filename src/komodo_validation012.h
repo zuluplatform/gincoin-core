@@ -345,7 +345,7 @@ static inline int32_t sha256_vprocess(struct sha256_vstate *md,const uint8_t *in
         else
         {
             n = MIN(inlen,64 - md->curlen);
-            memcpy(md->buf + md->curlen,in,(size_t)n);
+            std::memcpy(md->buf + md->curlen,in,(size_t)n);
             md->curlen += n, in += n, inlen -= n;
             if ( md->curlen == 64 )
             {
@@ -676,7 +676,7 @@ uint256 komodo_calcMoM(int32_t height,int32_t MoMdepth)
     for (i=0; i<MoMdepth; i++)
     {
         if ( (pindex= komodo_chainactive(height - i)) != 0 )
-            memcpy(&tree[i],&pindex->hashMerkleRoot,sizeof(bits256));
+            std::memcpy(&tree[i],&pindex->hashMerkleRoot,sizeof(bits256));
         else
         {
             free(tree);
@@ -707,7 +707,7 @@ int32_t komodo_notaries(uint8_t pubkeys[64][33],int32_t height,uint32_t timestam
                     decode_hex(elected_pubkeys0[i],33,(char *)Notaries_elected0[i][1]);
                 did0 = 1;
             }
-            memcpy(pubkeys,elected_pubkeys0,n0 * 33);
+            std::memcpy(pubkeys,elected_pubkeys0,n0 * 33);
             if ( ASSETCHAINS_SYMBOL[0] != 0 )
               LogPrint("dpow","%s height.%d t.%u elected.%d notaries\n",ASSETCHAINS_SYMBOL,height,timestamp,n0);
             return(n0);
@@ -723,7 +723,7 @@ int32_t komodo_notaries(uint8_t pubkeys[64][33],int32_t height,uint32_t timestam
                     LogPrint("dpow","%s height.%d t.%u elected.%d notaries2\n",ASSETCHAINS_SYMBOL,height,timestamp,n1);
                 did1 = 1;
             }
-            memcpy(pubkeys,elected_pubkeys1,n1 * 33);
+            std::memcpy(pubkeys,elected_pubkeys1,n1 * 33);
             return(n1);
         }
     }
@@ -1115,7 +1115,7 @@ void komodo_connectblock(CBlockIndex *pindex,CBlock& block)
                 len = block.vtx[i].vout[j].scriptPubKey.size();
                 if ( len >= (int32_t)sizeof(uint32_t) && len <= (int32_t)sizeof(scriptbuf) )
                 {
-                    memcpy(scriptbuf,block.vtx[i].vout[j].scriptPubKey[0],len);
+                    std::memcpy(scriptbuf,block.vtx[i].vout[j].scriptPubKey[0],len);
                     komodo_voutupdate(i,j,scriptbuf,len,height,&specialtx,&notarizedheight,(uint64_t)block.vtx[i].vout[j].nValue,notarized,signedmask);
                 }
             }
