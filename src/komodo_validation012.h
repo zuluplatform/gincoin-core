@@ -109,7 +109,7 @@ int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsi
 
     if ( !tx.IsNull() && n >= 0 && n < (int32_t)tx.vout.size() )
     {
-        ptr = (uint8_t *)tx.vout[n].scriptPubKey.data();
+        ptr = (uint8_t *)  tx.vout[n].scriptPubKey[0];
         m = tx.vout[n].scriptPubKey.size();
 
         for (i=0; i<maxsize&&i<m; i++) {
@@ -1115,7 +1115,7 @@ void komodo_connectblock(CBlockIndex *pindex,CBlock& block)
                 len = block.vtx[i].vout[j].scriptPubKey.size();
                 if ( len >= (int32_t)sizeof(uint32_t) && len <= (int32_t)sizeof(scriptbuf) )
                 {
-                    memcpy(scriptbuf,block.vtx[i].vout[j].scriptPubKey.data(),len);
+                    memcpy(scriptbuf,block.vtx[i].vout[j].scriptPubKey[0],len);
                     komodo_voutupdate(i,j,scriptbuf,len,height,&specialtx,&notarizedheight,(uint64_t)block.vtx[i].vout[j].nValue,notarized,signedmask);
                 }
             }
