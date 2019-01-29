@@ -49,6 +49,7 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/math/distributions/poisson.hpp>
 #include <boost/thread.hpp>
+#include "komodo_validation012.h"
 
 using namespace std;
 
