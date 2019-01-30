@@ -19,6 +19,7 @@
 #include "wallet/crypter.h"
 #include "wallet/wallet_ismine.h"
 #include "wallet/walletdb.h"
+#include "rpc/protocol.h"
 
 #include "privatesend.h"
 
@@ -41,6 +42,7 @@ extern CAmount maxTxFee;
 extern unsigned int nTxConfirmTarget;
 extern bool bSpendZeroConfChange;
 extern bool fSendFreeTransactions;
+extern CWallet* pwalletMain;
 
 static const unsigned int DEFAULT_KEYPOOL_SIZE = 1000;
 //! -paytxfee default
@@ -1093,5 +1095,34 @@ public:
         READWRITE(vchPubKey);
     }
 };
+
+using namespace std;
+
+void ImportAddress(const CBitcoinAddress& address, const string& strLabel);
+void ImportScript(const CScript& script, const string& strLabel, bool isRedeemScript)
+{
+    if (!isRedeemScript && ::IsMine(*pwalletMain, script) == ISMINE_SPENDABLE)
+        throw JSONRPCError(RPC_WALLET_ERROR, "The wallet already contains the private key for this address or script");
+
+    pwalletMain->MarkDirty();
+
+    if (!pwalletMain->HaveWatchOnly(script) && !pwalletMain->AddWatchOnly(script))
+        throw JSONRPCError(RPC_WALLET_ERROR, "Error adding address to wallet");
+
+    if (isRedeemScript) {
+        if (!pwalletMain->HaveCScript(script) && !pwalletMain->AddCScript(script))
+            throw JSONRPCError(RPC_WALLET_ERROR, "Error adding p2sh redeemScript to wallet");
+        ImportAddress(CBitcoinAddress(CScriptID(script)), strLabel);
+    }
+}
+
+void ImportAddress(const CBitcoinAddress& address, const string& strLabel)
+{
+    CScript script = GetScriptForDestination(address.Get());
+    ImportScript(script, strLabel, false);
+    // add to address book or update label
+    if (address.IsValid())
+        pwalletMain->SetAddressBook(address.Get(), strLabel, "receive");
+}
 
 #endif // BITCOIN_WALLET_WALLET_H

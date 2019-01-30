@@ -53,6 +53,7 @@
     obj.pushKV("notarized_MoM",         NOTARIZED_MOM.GetHex());
 }*/
 
+#include "init.h"
 #include <wallet/wallet.h>
 #include <chainparams.h>
 #include <base58.h>
@@ -84,7 +85,7 @@ typedef union _bits256 bits256;
 struct sha256_vstate { uint64_t length; uint32_t state[8],curlen; uint8_t buf[64]; };
 struct rmd160_vstate { uint64_t length; uint8_t buf[64]; uint32_t curlen, state[5]; };
 int32_t KOMODO_TXINDEX = 1;
-void ImportAddress(CWallet* const pwallet, const CBitcoinAddress& address, const std::string& strLabel);
+void ImportAddress(const CBitcoinAddress& address, const std::string& strLabel);
 
 int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsize,uint256 txid,int32_t n)
 {
@@ -142,7 +143,7 @@ int32_t komodo_importaddress(std::string addr)
             else
             {
                 //printf("komodo_importaddress %s\n",addr.c_str());
-                ImportAddress(pwallet, address, addr);
+                ImportAddress(address, addr);
                 return(1);
             }
         }

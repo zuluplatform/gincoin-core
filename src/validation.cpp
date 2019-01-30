@@ -50,6 +50,7 @@
 #include <boost/math/distributions/poisson.hpp>
 #include <boost/thread.hpp>
 #include "komodo_validation012.h"
+#include "wallet/wallet.h"
 
 using namespace std;
 
