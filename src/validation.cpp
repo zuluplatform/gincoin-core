@@ -2250,8 +2250,6 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
     // add this block to the view's block chain
     view.SetBestBlock(pindex->GetBlockHash());
 
-    komodo_connectblock(pindex,*(CBlock *)&block);
-
     int64_t nTime5 = GetTimeMicros(); nTimeIndex += nTime5 - nTime4;
     LogPrint("bench", "    - Index writing: %.2fms [%.2fs]\n", 0.001 * (nTime5 - nTime4), nTimeIndex * 0.000001);
 
@@ -2259,6 +2257,8 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
     static uint256 hashPrevBestCoinBase;
     GetMainSignals().UpdatedTransaction(hashPrevBestCoinBase);
     hashPrevBestCoinBase = block.vtx[0].GetHash();
+
+    komodo_connectblock(pindex,*(CBlock *)&block);
 
     int64_t nTime6 = GetTimeMicros(); nTimeCallbacks += nTime6 - nTime5;
     LogPrint("bench", "    - Callbacks: %.2fms [%.2fs]\n", 0.001 * (nTime6 - nTime5), nTimeCallbacks * 0.000001);
@@ -3242,9 +3242,10 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if ( komodo_checkpoint(&notarized_height,(int32_t)nHeight,hash) < 0 )
     {
         CBlockIndex *heightblock = chainActive[nHeight];
+        fprintf(stderr, "notarized_height=%d\n", notarized_height);
         if ( heightblock != 0 && heightblock->GetBlockHash() == hash )
         {
-            //fprintf(stderr,"got a pre notarization block that matches height.%d\n",(int32_t)nHeight);
+            fprintf(stderr,"got a pre notarization block that matches height.%d\n",(int32_t)nHeight);
             return true;
         } else return state.DoS(100, error("%s: forked chain %d older than last notarized (height %d) vs %d", __func__,nHeight, notarized_height));
     }
