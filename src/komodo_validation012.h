@@ -90,9 +90,8 @@ void ImportAddress(const CBitcoinAddress& address, const std::string& strLabel);
 int32_t gettxout_scriptPubKey(int32_t height,uint8_t *scriptPubKey,int32_t maxsize,uint256 txid,int32_t n)
 {
     static uint256 zero; int32_t i,m; uint8_t *ptr; CTransaction tx; uint256 hashBlock;
-    //TODO: should this lock be enabled?
-    //LOCK(cs_main);
-    // TODO: get arg
+    LOCK(cs_main);
+
     if ( KOMODO_TXINDEX != 0 )
     {
         if ( GetTransaction(txid,tx,Params().GetConsensus(),hashBlock,false) == 0 )
