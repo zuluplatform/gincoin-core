@@ -122,7 +122,7 @@ public:
         consensus.nPowApr2018TargetSpacing = 2 * 60;
         
         // X16rt switch
-        consensus.nX16rtTimestamp = 1549468800; //Feb 6, 2019 @ 4pm GMT
+        consensus.nX16rtTimestamp = 1549987200; //Feb 12, 2019 @ 4pm GMT
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000331293c5e9f8112e");
