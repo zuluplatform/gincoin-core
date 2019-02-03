@@ -152,33 +152,6 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
     return NullUniValue;
 }
 
-void ImportAddress(const CBitcoinAddress& address, const string& strLabel);
-void ImportScript(const CScript& script, const string& strLabel, bool isRedeemScript)
-{
-    if (!isRedeemScript && ::IsMine(*pwalletMain, script) == ISMINE_SPENDABLE)
-        throw JSONRPCError(RPC_WALLET_ERROR, "The wallet already contains the private key for this address or script");
-
-    pwalletMain->MarkDirty();
-
-    if (!pwalletMain->HaveWatchOnly(script) && !pwalletMain->AddWatchOnly(script))
-        throw JSONRPCError(RPC_WALLET_ERROR, "Error adding address to wallet");
-
-    if (isRedeemScript) {
-        if (!pwalletMain->HaveCScript(script) && !pwalletMain->AddCScript(script))
-            throw JSONRPCError(RPC_WALLET_ERROR, "Error adding p2sh redeemScript to wallet");
-        ImportAddress(CBitcoinAddress(CScriptID(script)), strLabel);
-    }
-}
-
-void ImportAddress(const CBitcoinAddress& address, const string& strLabel)
-{
-    CScript script = GetScriptForDestination(address.Get());
-    ImportScript(script, strLabel, false);
-    // add to address book or update label
-    if (address.IsValid())
-        pwalletMain->SetAddressBook(address.Get(), strLabel, "receive");
-}
-
 UniValue importaddress(const UniValue& params, bool fHelp)
 {
     if (!EnsureWalletIsAvailable(fHelp))

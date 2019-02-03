@@ -30,6 +30,7 @@
 #include <boost/algorithm/string.hpp>
 
 #include <univalue.h>
+#include "komodo_validation012.h"
 
 using namespace std;
 
@@ -115,6 +116,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
 #endif
     obj.push_back(Pair("relayfee",      ValueFromAmount(::minRelayTxFee.GetFeePerK())));
     obj.push_back(Pair("errors",        GetWarnings("statusbar")));
+
+    int32_t komodo_prevMoMheight();
+    extern uint256 NOTARIZED_HASH,NOTARIZED_DESTTXID,NOTARIZED_MOM;
+    extern int32_t NOTARIZED_HEIGHT,NOTARIZED_MOMDEPTH;
+    obj.pushKV("notarizedhash",         NOTARIZED_HASH.GetHex());
+    obj.pushKV("notarizedtxid",         NOTARIZED_DESTTXID.GetHex());
+    obj.pushKV("notarized",             (int)NOTARIZED_HEIGHT);
+    obj.pushKV("prevMoMheight",         (int)komodo_prevMoMheight());
+    obj.pushKV("notarized_MoMdepth",    (int)NOTARIZED_MOMDEPTH);
+    obj.pushKV("notarized_MoM",         NOTARIZED_MOM.GetHex());
+
     return obj;
 }
 
