@@ -30,7 +30,6 @@
 #include <boost/algorithm/string.hpp>
 
 #include <univalue.h>
-#include "komodo_validation012.h"
 
 using namespace std;
 

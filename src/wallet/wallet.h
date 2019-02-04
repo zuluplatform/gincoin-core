@@ -19,6 +19,7 @@
 #include "wallet/crypter.h"
 #include "wallet/wallet_ismine.h"
 #include "wallet/walletdb.h"
+#include "rpc/protocol.h"
 
 #include "privatesend.h"
 
@@ -41,6 +42,7 @@ extern CAmount maxTxFee;
 extern unsigned int nTxConfirmTarget;
 extern bool bSpendZeroConfChange;
 extern bool fSendFreeTransactions;
+extern CWallet* pwalletMain;
 
 static const unsigned int DEFAULT_KEYPOOL_SIZE = 1000;
 //! -paytxfee default
