@@ -64,6 +64,7 @@ public:
     }
 
     uint256 GetHash() const;
+    uint256 GetHash(const bool noConsensus) const;
 
     int64_t GetBlockTime() const
     {

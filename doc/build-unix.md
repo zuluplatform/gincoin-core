@@ -7,7 +7,11 @@ Docker container for new builds
 A docker image is provided for quick building of the binaries without installing dependencies. Provided that the folder "/tmp/build" exists you can run:
 
 ```bash
+#for ubuntu 18.04 builds
 docker run --rm -v /tmp/build:/build gincoin/gincoin-core-build --disable-tests --without-gui
+
+#for ubuntu 16.04 builds
+docker run --rm -v /tmp/build:/build gincoin/gincoin-core-build-ubuntu16 --disable-tests --without-gui
 ```
 
 Once the build finishes the binaries will be available in /tmp/build.

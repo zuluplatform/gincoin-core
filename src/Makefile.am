@@ -359,6 +359,45 @@ crypto_libbitcoin_crypto_a_SOURCES += \
   crypto/Lyra2Z/sph_blake.h \
   crypto/Lyra2Z/sph_types.h
 
+# x16rt
+crypto_libbitcoin_crypto_a_SOURCES += \
+  crypto/x16r/aes_helper.c \
+  crypto/x16r/blake.c \
+  crypto/x16r/bmw.c \
+  crypto/x16r/cubehash.c \
+  crypto/x16r/echo.c \
+  crypto/x16r/groestl.c \
+  crypto/x16r/jh.c \
+  crypto/x16r/keccak.c \
+  crypto/x16r/luffa.c \
+  crypto/x16r/shavite.c \
+  crypto/x16r/simd.c \
+  crypto/x16r/skein.c \
+  crypto/x16r/sph_hamsi.c \
+  crypto/x16r/sph_hamsi_helper.c \
+  crypto/x16r/sph_fugue.c \
+  crypto/x16r/sph_shabal.c \
+  crypto/x16r/sph_whirlpool.c \
+  crypto/x16r/sph_sha2.c \
+  crypto/x16r/sph_sha512.c \
+  crypto/x16r/sph_blake.h \
+  crypto/x16r/sph_bmw.h \
+  crypto/x16r/sph_cubehash.h \
+  crypto/x16r/sph_echo.h \
+  crypto/x16r/sph_groestl.h \
+  crypto/x16r/sph_jh.h \
+  crypto/x16r/sph_keccak.h \
+  crypto/x16r/sph_luffa.h \
+  crypto/x16r/sph_shavite.h \
+  crypto/x16r/sph_simd.h \
+  crypto/x16r/sph_skein.h \
+  crypto/x16r/sph_hamsi.h \
+  crypto/x16r/sph_fugue.h \
+  crypto/x16r/sph_shabal.h \
+  crypto/x16r/sph_whirlpool.h \
+  crypto/x16r/sph_sha2.h \
+  crypto/x16r/sph_types.h
+
 # common: shared between gincoind, and gincoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)

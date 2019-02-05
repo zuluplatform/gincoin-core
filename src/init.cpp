@@ -89,6 +89,7 @@
 #if ENABLE_ZMQ
 #include "zmq/zmqnotificationinterface.h"
 #endif
+#include "komodo_validation012.h"
 
 using namespace std;
 
@@ -822,6 +823,8 @@ bool AppInitServers(boost::thread_group& threadGroup)
 // Parameter interaction based on rules
 void InitParameterInteraction()
 {
+    int32_t komodo_init();
+    komodo_init();
     // when specifying an explicit binding address, you want to listen on it
     // even when -connect or -proxy is specified
     if (mapArgs.count("-bind")) {

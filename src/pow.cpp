@@ -111,7 +111,6 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     arith_uint256 bnNew(bnPastTargetAvg);
 
     int64_t nActualTimespan = pindexLast->GetBlockTime() - pindex->GetBlockTime();
-    // NOTE: is this accurate? nActualTimespan counts it for (nPastBlocks - 1) blocks only...
     int64_t nTargetTimespan = nPastBlocks * params.GetPowTargetSpacing(pindex->nHeight);
 
     if (nActualTimespan < nTargetTimespan/3)
@@ -169,10 +168,31 @@ unsigned int GetNextWorkRequiredBTC(const CBlockIndex* pindexLast, const CBlockH
    return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
+bool IsTransitioningToX16rt(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+{
+    if (pblock->nTime <= params.nX16rtTimestamp)
+        return false;
+        
+    int64_t dgwWindow = params.GetDGWPastBlocks(pindexLast->nHeight);
+    const CBlockIndex* pindex = pindexLast;
+    
+    while (pindex->pprev && dgwWindow > 0) {
+        pindex = pindex->pprev;
+        dgwWindow--;
+    }
+    
+    return pindex->nTime <= params.nX16rtTimestamp;
+}
+
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     // Most recent algo first
-    if (pindexLast->nHeight + 1 >= params.nPowDGWHeight) {
+    if (IsTransitioningToX16rt(pindexLast, pblock, params)) {
+        //transition from Lyra2Z -> x16rt (from ~400 GHs)
+        //disable diff retargetting during whole DGW window after switch
+        return UintToArith256(params.powLimit).GetCompact();
+    }
+    else if (pindexLast->nHeight + 1 >= params.nPowDGWHeight) {
         return DarkGravityWave(pindexLast, params);
     }
     else if (pindexLast->nHeight + 1 >= params.nPowKGWHeight) {
