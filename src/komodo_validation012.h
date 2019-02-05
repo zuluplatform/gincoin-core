@@ -53,12 +53,12 @@
     obj.pushKV("notarized_MoM",         NOTARIZED_MOM.GetHex());
 }*/
 
-#include "init.h"
 #include <wallet/wallet.h>
 #include <chainparams.h>
 #include <base58.h>
 #include "komodo_notaries.h"
 #include "validation.h"
+#include "init.h"
 
 #define SATOSHIDEN ((uint64_t)100000000L)
 #define dstr(x) ((double)(x) / SATOSHIDEN)

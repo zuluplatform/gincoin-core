@@ -49,10 +49,11 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/math/distributions/poisson.hpp>
 #include <boost/thread.hpp>
-#include "komodo_validation012.h"
-#include "wallet/wallet.h"
 
 using namespace std;
+void komodo_disconnect(CBlockIndex *pindex,CBlock *block);
+int32_t komodo_checkpoint(int32_t *notarized_heightp,int32_t nHeight,uint256 hash);
+void komodo_connectblock(CBlockIndex *pindex,CBlock& block);
 
 #if defined(NDEBUG)
 # error "Gincoin Core cannot be compiled without assertions."
