@@ -198,8 +198,10 @@ BITCOIN_CORE_H = \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h\
   zmq/zmqnotificationinterface.h \
-  zmq/zmqpublishnotifier.h
-
+  zmq/zmqpublishnotifier.h \
+  komodo_notaries.h \
+  komodo_rpcblockchain.h \
+  komodo_validation012.h
 
 obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
@@ -341,7 +343,7 @@ crypto_libbitcoin_crypto_a_SOURCES += \
   crypto/sph_shavite.h \
   crypto/sph_simd.h \
   crypto/sph_skein.h \
-  crypto/sph_types.h
+  crypto/sph_types.h 
 
 # neoscrypt
 crypto_libbitcoin_crypto_a_SOURCES += \
@@ -396,7 +398,7 @@ crypto_libbitcoin_crypto_a_SOURCES += \
   crypto/x16r/sph_shabal.h \
   crypto/x16r/sph_whirlpool.h \
   crypto/x16r/sph_sha2.h \
-  crypto/x16r/sph_types.h
+  crypto/x16r/sph_types.h 
 
 # common: shared between gincoind, and gincoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
