@@ -16,6 +16,7 @@
 #include "util.h"
 #include "utilstrencodings.h"
 #include "validation.h"
+#include "testnet_notaries.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
@@ -46,6 +47,55 @@ using namespace std;
  *
  * Or alternatively, create a specific query method for the information.
  **/
+ 
+ int32_t getera(int now)
+{
+    for (int32_t i = 0; i < NUM_STAKED_ERAS; i++) {
+        if ( now <= STAKED_NOTARIES_TIMESTAMP[i] ) {
+            return(i);
+        }
+    }
+}
+  
+ UniValue getiguanajson(const UniValue& params, bool fHelp)
+{
+    if (fHelp || params.size() != 0)
+      throw runtime_error("getiguanajson\nreturns json for iguana, for the current ERA.");
+
+    UniValue json(UniValue::VOBJ);
+    UniValue seeds(UniValue::VARR);
+    UniValue notaries(UniValue::VARR);
+    // get the current era, use local time for now.
+    int now = time(NULL);
+    int32_t era = getera(now);
+
+    // loop over seeds array and push back to json array for seeds
+    for (int8_t i = 0; i < 8; i++) {
+        seeds.push_back(iguanaSeeds[i][0]);
+    }
+
+    // loop over era's notaries and push back each pair to the notary array
+    for (int8_t i = 0; i < num_notaries_STAKED[era]; i++) {
+        UniValue notary(UniValue::VOBJ);
+        notary.push_back(Pair(notaries_STAKED[era][i][0],notaries_STAKED[era][i][1]));
+        notaries.push_back(notary);
+    }
+
+    // get the min sigs .. this always rounds UP so min sigs in iguana is +1 min sigs in komodod, due to some possible rounding error.
+    int minsigs;
+    if ( num_notaries_STAKED[era]/5 > overrideMinSigs )
+        minsigs = (num_notaries_STAKED[era] / 5) + 1;
+    else
+        minsigs = overrideMinSigs;
+
+    json.push_back(Pair("port",iguanaPort));
+    json.push_back(Pair("BTCminsigs",BTCminsigs));
+    json.push_back(Pair("minsigs",minsigs));
+    json.push_back(Pair("seeds",seeds));
+    json.push_back(Pair("notaries",notaries));
+    return json;
+}
+
 UniValue getinfo(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)

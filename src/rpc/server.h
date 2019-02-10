@@ -247,6 +247,7 @@ extern UniValue walletlock(const UniValue& params, bool fHelp);
 extern UniValue encryptwallet(const UniValue& params, bool fHelp);
 extern UniValue validateaddress(const UniValue& params, bool fHelp);
 extern UniValue getinfo(const UniValue& params, bool fHelp);
+extern UniValue getiguanajson(const UniValue& params, bool fHelp);
 extern UniValue debug(const UniValue& params, bool fHelp);
 extern UniValue getwalletinfo(const UniValue& params, bool fHelp);
 extern UniValue getblockchaininfo(const UniValue& params, bool fHelp);
