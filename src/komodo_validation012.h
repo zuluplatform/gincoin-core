@@ -707,6 +707,9 @@ int32_t STAKED_era(int timestamp)
 
 int8_t numStakedNotaries(uint8_t pubkeys[64][33],int8_t era) {
     int i; int8_t retval = 0;
+    // You need to delcare each era here then add it to the switch case below. 
+    // We need an easier way to do this. With a LOT of eras it gets very long.
+    // I think maybe making all these 3 dimensional arrays aswell and using a loop will work?
     static uint8_t staked_pubkeys1[64][33],staked_pubkeys2[64][33],didstaked1,didstaked2;
     //static uint8_t staked_pubkeys3[64][33],staked_pubkeys4[64][33],didstaked3,didstaked4;
     static char ChainName[65];

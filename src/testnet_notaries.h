@@ -12,9 +12,18 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
+ /* To use this testnet functionality we just need to pipe the output of getiguanajson RPC to this file.
+ https://github.com/jl777/SuperNET/blob/master/iguana/m_notary_testnet#L11
+example `gincoin-cli getiguanajson > testnet`
+cp testnet ~/SuperNET/iguana/testnet
+Also make sure the IP address's for a few or all of the testnet nodes are added to the m_notary_testnet file!
+then to start iguana ./m_notary_testnet  
+ */
+ // you can change the port here to pretty much anything. Making hard forking changes to iguana, change the port. Other than that doesn't really matter.
  static const int32_t iguanaPort = 6666;
  static const int8_t BTCminsigs = 13;
  static const int8_t overrideMinSigs = 0;
+ // I think these can really be anything... However its safer to have at least 1 or 2 testnet nodes IP here.
  static const char *iguanaSeeds[8][1] =
  {
    {"80.240.17.222"},
@@ -27,11 +36,20 @@
    {"103.6.12.112"},
  };
 
+// This needs to be a number higher than what the coin accepts as a "block from future"
+// In komodo this is like 600s. This prevents a miner mining blocks with timestamps that could switch eras back and forth. 
  static const int STAKED_ERA_GAP = 777;
+ 
+ // Disable and enable testnet mode with this var. To use komodo notary nodes, change to 0.
  static const int TESTNET = 1;
 
+// To change pubkeys you need to add the new era's pubkeys to the following information. 
+// eg to add era 3, change NUM_STAKED_ERAS to 3, and add the timestamp and number of pubkeys to:
+// STAKED_NOTARIES_TIMESTAMP and num_notaries_STAKED. then add the pubkeys and notaries names to: 
+// notaries_STAKED 3 dimensional array. 
+// Also you need to add the pubkey activation to numStakedNotaries function on line #708 of komodo_validation012.h.
  static const int NUM_STAKED_ERAS = 2;
- static const int STAKED_NOTARIES_TIMESTAMP[NUM_STAKED_ERAS] = {1542964044, 1549188000};
+ static const int STAKED_NOTARIES_TIMESTAMP[NUM_STAKED_ERAS] = {1542964044, 1604233333};
  static const int32_t num_notaries_STAKED[NUM_STAKED_ERAS] = { 17, 25 };
 
  // Era array of pubkeys.
