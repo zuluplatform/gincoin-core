@@ -3,10 +3,13 @@ REPO="https://github.com/GIN-coin/gincoin-core.git"
 SRC="/tmp/src"
 BUILD="/build"
 OPTIONS="$@"
+BRANCH="${BRANCH:-master}"
 
-git clone ${REPO} ${SRC} && cd ${SRC}
-
-./autogen.sh && ./configure ${OPTIONS} && make
+git clone ${REPO} ${SRC} && \
+    cd ${SRC} && \
+    git checkout ${BRANCH} && \
+    ./autogen.sh && \
+    ./configure ${OPTIONS} && make
 
 if [[ ! -f ${SRC}/src/gincoind ]]; then
     echo "Build failed"
