@@ -1,5 +1,5 @@
 ---
-name: "gincoin-linux-1.2.0.0"
+name: "gincoin-linux-1.2.1.0"
 enable_cache: true
 suites:
 - "trusty"
