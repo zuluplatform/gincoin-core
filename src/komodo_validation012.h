@@ -841,7 +841,7 @@ int32_t komodo_notarizeddata(int32_t nHeight,uint256 *notarized_hashp,uint256 *n
             {
                 if ( NPOINTS[i].nHeight >= nHeight )
                 {
-                    printf("i.%d np->ht %d [%d].ht %d >= nHeight.%d\n",i,np->nHeight,i,NPOINTS[i].nHeight,nHeight);
+                    printf("i.%d np->ht %d [%d].ht %d >= nHeight.%d\n",i,np ? np->nHeight : 0,i,NPOINTS[i].nHeight,nHeight);
                     break;
                 }
                 np = &NPOINTS[i];
