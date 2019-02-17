@@ -120,12 +120,15 @@ public:
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 23750;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // X16rt switch
+        consensus.nX16rtTimestamp = 1550246400; //Feb 15, 2019 @ 4pm GMT
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000047a222baa2d1fe");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000331293c5e9f8112e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000000000a106c24554e369cdacdb683fd6daef276ca38b1991ad82e74dc63");
+        consensus.defaultAssumeValid = uint256S("0x0000000000015fe3dbdb0ed7d40bd4441bc1c775441ad14052770d9e8306e3a6");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -143,7 +146,7 @@ public:
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1519335052, 13140, 0x1e0ffff0, 1, 20 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
+        consensus.hashGenesisBlock = genesis.GetHash(true);
 
         assert(consensus.hashGenesisBlock == uint256S("0x00000cd6bde619b2c3b23ad2e384328a450a37fa28731debf748c3b17f91f97d"));
         assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));
@@ -188,10 +191,11 @@ public:
                     ( 100, uint256S("0x000001d9726a3d9624b6bd53428b658204333461708f84a520570272c5d7f511"))
                     ( 1000, uint256S("0x00000000015079cff402ec1f9d88af43eba786f1a70bed49eca4c96b1786c074"))
                     ( 22092, uint256S("0x00000000000a106c24554e369cdacdb683fd6daef276ca38b1991ad82e74dc63"))
+                    ( 225000, uint256S("0x0000000000015fe3dbdb0ed7d40bd4441bc1c775441ad14052770d9e8306e3a6"))
             ,
-            1522841266, // * UNIX timestamp of last checkpoint block
-            28497,    // * total number of transactions between genesis and last checkpoint
-            //   (the tx=... number in the SetBestChain debug.log lines)
+            1548176715, // * UNIX timestamp of last checkpoint block
+            470784,     // * total number of transactions between genesis and last checkpoint
+                        //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
         };
     }
@@ -250,14 +254,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 50; // 50% of 100
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000175b347e6");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.defaultAssumeValid = uint256S("0x0000088df2e615eb6acced5f055f5a87736a43018d186e9af5132f1c551f4b28");
 
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 1;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // X16rt switch
+        consensus.nX16rtTimestamp = 1548118800; //Jan 22nd, 2019, 1am GMT
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
@@ -270,7 +277,7 @@ public:
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1519336394, 1105519, 0x1e0ffff0, 1, 20 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
+        consensus.hashGenesisBlock = genesis.GetHash(true);
 
         assert(consensus.hashGenesisBlock == uint256S("0x00000ac0100fe889e7130e47d13819cc91eba5646dc1e8fc050c7a67532565ed"));
         assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));
@@ -308,10 +315,11 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                    (  0, consensus.hashGenesisBlock),
+                (  0, consensus.hashGenesisBlock)
+                ( 4260, uint256S("0x0000088df2e615eb6acced5f055f5a87736a43018d186e9af5132f1c551f4b28")),
 
-            1519336394, // * UNIX timestamp of last checkpoint block
-            0,       // * total number of transactions between genesis and last checkpoint
+            1547996670, // * UNIX timestamp of last checkpoint block
+            4273,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500         // * estimated number of transactions per day after checkpoint
         };
@@ -374,6 +382,9 @@ public:
         // Consensus Update Apr 2018
         consensus.mPowDGWReconfigureApr2018Height = 1;
         consensus.nPowApr2018TargetSpacing = 2 * 60;
+        
+        // X16rt switch
+        consensus.nX16rtTimestamp = 1519336474; //genesis + 1
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
@@ -385,7 +396,7 @@ public:
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1519336473, 0, 0x207fffff, 1, 20 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
+        consensus.hashGenesisBlock = genesis.GetHash(true);
         
         assert(consensus.hashGenesisBlock == uint256S("0x5f8058aea61edae50983271d61c69161ca1ee90a556127aba1b18f414e3293b7"));
         assert(genesis.hashMerkleRoot == uint256S("0x151883cb75e167308cfe2480d991e4d2c634f74499a5695b61afb3b19f070a5e"));

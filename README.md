@@ -1,21 +1,7 @@
-Gincoin Core staging tree 1.1.0
+Gincoin Core staging tree 1.2.0
 ===============================
 
 https://gincoin.io
-
-
-What is Gincoin?
-----------------
-
-Gincoin is an experimental new digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. Gincoin uses peer-to-peer technology
-to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Gincoin Core is the name of the open
-source software which enables the use of this currency.
-
-For more information, as well as an immediately useable, binary version of
-the Gincoin Core software, see https://gincoin.io/.
-
 
 License
 -------
@@ -49,9 +35,6 @@ submit new unit tests for old code. Unit tests can be compiled and run
 There are also [regression and integration tests](/qa) of the RPC interface, written
 in Python, that are run automatically on the build server.
 These tests can be run (if the [test dependencies](/qa) are installed) with: `qa/pull-tester/rpc-tests.py`
-
-The Travis CI system makes sure that every pull request is built for Windows
-and Linux, OS X, and that unit and sanity tests are automatically run.
 
 ### Manual Quality Assurance (QA) Testing
 

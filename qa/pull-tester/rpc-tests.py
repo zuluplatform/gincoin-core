@@ -88,6 +88,8 @@ if ENABLE_ZMQ:
 
 #Tests
 testScripts = [
+    'dpow.py',
+    'dpowconfs.py',
     'bip68-112-113-p2p.py',
     'wallet.py',
     'wallet-hd.py',
