@@ -1,4 +1,4 @@
-Gincoin Core staging tree 1.2.0
+Gincoin Core staging tree 1.3.0
 ===============================
 
 https://gincoin.io

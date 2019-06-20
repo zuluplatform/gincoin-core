@@ -1,5 +1,5 @@
 ---
-name: "gincoin-osx-1.2.1.0"
+name: "gincoin-osx-1.3.0.0"
 enable_cache: true
 suites:
 - "trusty"
