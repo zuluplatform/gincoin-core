@@ -78,12 +78,12 @@ public:
         consensus.nMasternodePaymentsIncreaseBlock = 158000; // actual historical value - not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value - not used
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 999999999; // not used
-        consensus.nBudgetPaymentsCycleBlocks = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
+        consensus.nBudgetPaymentsStartBlock = 344053;
+        consensus.nBudgetPaymentsCycleBlocks = 21600; // ~(60*24*30)/2
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nBudgetProposalEstablishingTime = 60*60*24;
-        consensus.nSuperblockStartBlock = 999999999; //not used
-        consensus.nSuperblockCycle = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
+        consensus.nSuperblockStartBlock = 345600;
+        consensus.nSuperblockCycle = 21600; // ~(60*24*30)/2
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
@@ -129,7 +129,7 @@ public:
         consensus.nThirdSubsidyHalvingInterval = 210240;
 
         // Foundation funding
-        consensus.foundationAddress = "GbqLP5AcRjyatmScVjyqrmpsZS7PJ4ThWx";
+        consensus.foundationAddress = "GP2Tuv2AvE4zibWFqoSanFotwdmdPCjcpL";
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000004732a4bec5899f1f");
