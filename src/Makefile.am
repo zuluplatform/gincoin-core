@@ -124,6 +124,7 @@ BITCOIN_CORE_H = \
   init.h \
   instantx.h \
   key.h \
+  key_io.h \
   keepass.h \
   keystore.h \
   dbwrapper.h \
@@ -417,6 +418,7 @@ libbitcoin_common_a_SOURCES = \
   hash.cpp \
   hdchain.cpp \
   key.cpp \
+  key_io.cpp \
   keystore.cpp \
   netaddress.cpp \
   netbase.cpp \
