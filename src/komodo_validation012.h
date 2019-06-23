@@ -81,9 +81,9 @@
 #define NUM_KMD_SEASONS 3
 #define NUM_KMD_NOTARIES 64
 // first season had no third party coins, so it ends at block 0. 
-// second season ends at approx block 346,313, please check this!!!!! it should be as close as possible to July 15th 0:00 UTC. 
+// second season ends at approx block 344053. it should be as close as possible to July 15th 0:00 UTC.
 // third season ending height is unknown so it set to very very far in future. 
-static const int32_t KMD_SEASON_HEIGHTS[NUM_KMD_SEASONS] = {0, 346313, 999999999};
+static const int32_t KMD_SEASON_HEIGHTS[NUM_KMD_SEASONS] = {0, 344053, 999999999};
 
 // Array of pubkeys. Add extra seasons to bottom as requried, after adding appropriate info above. 
 static const char *notaries_elected[NUM_KMD_SEASONS][NUM_KMD_NOTARIES][2] =
